@@ -5,16 +5,16 @@ m_ProjectFiles:
     m_ContentTrackingEnabled: 1
     m_ModificationDate:
       serializedVersion: 2
-      ticks: 637805664105577322
-    m_Hash: 4232660727
+      ticks: 637806637802655409
+    m_Hash: 2151677095
   m_LockFileStatus:
     m_FilePath: C:/Users/sdish/Just in Game/JUST_IN_GAME/Packages/packages-lock.json
     m_PathExists: 1
     m_ContentTrackingEnabled: 1
     m_ModificationDate:
       serializedVersion: 2
-      ticks: 637805664213028382
-    m_Hash: 398154054
+      ticks: 637806637802661550
+    m_Hash: 3589040643
 m_EmbeddedPackageManifests:
   m_ManifestsStatus: {}
 m_PackageAssets:

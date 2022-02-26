@@ -18,6 +18,9 @@ GameObject:
   - component: {fileID: 1223659354}
   - component: {fileID: 1223659355}
   - component: {fileID: 1223659356}
+  - component: {fileID: 604652730}
+  - component: {fileID: 604652731}
+  - component: {fileID: 604652732}
   m_Layer: 0
   m_Name: Player
   m_TagString: Player
@@ -129,9 +132,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0f3b6ac1030c7486ca013e1a03e764c1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  keyPositive: 275
-  keyNegative: 276
-  v3Force: {x: 0, y: 0, z: 0.1}
+  keyPositive: 100
+  keyNegative: 97
+  v3Force: {x: 0, y: -0.001, z: 0.1}
+  jumpForce: 11
 --- !u!114 &8268555052368567612
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -144,9 +148,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0f3b6ac1030c7486ca013e1a03e764c1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  keyPositive: 274
-  keyNegative: 273
-  v3Force: {x: 0.1, y: 0, z: 0}
+  keyPositive: 115
+  keyNegative: 119
+  v3Force: {x: 0.1, y: -0.001, z: 0}
+  jumpForce: 11
 --- !u!114 &1223659354
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -178,6 +183,48 @@ MonoBehaviour:
   timeBetweenShots: 0.2
   firePoint: {fileID: 0}
 --- !u!114 &1223659356
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8268555052368567606}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9eadf69d5a87a4f55878b6f51c60c25f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &604652730
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8268555052368567606}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 59625cf0c3c824da797c03440e68ef16, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  theGun: {fileID: 604652731}
+--- !u!114 &604652731
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8268555052368567606}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a23c33f75a32a4484a8ea65a28d0ed0e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  isFiring: 0
+  bullet: {fileID: 0}
+  bulletSpeed: 3
+  timeBetweenShots: 0.2
+  firePoint: {fileID: 0}
+--- !u!114 &604652732
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}

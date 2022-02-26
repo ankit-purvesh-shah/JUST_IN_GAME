@@ -13,17 +13,68 @@ public class AddPlayerControlledVelocity : MonoBehaviour
     [SerializeField]
     Vector3 v3Force;
 
+    [SerializeField]
+    private float jumpForce = 10;
+
+    private bool onPlatform;
+    private string PLATFORM_TAG = "Platform";
+
+    private Rigidbody myBody;
+
+    private void Awake()
+    {
+        myBody = GetComponent<Rigidbody>();
+    }
+
     // Update is called once per frame
     void FixedUpdate()
     {
+        PlayerMove();
+        //PlayerJump();
+    }
+
+    private void Update()
+    {
+        PlayerJump();
+    }
+    void PlayerMove() {
+
         if (Input.GetKey(keyPositive))
         {
-            GetComponent<Rigidbody>().velocity += v3Force;
+            myBody.velocity += v3Force;
         }
 
         if (Input.GetKey(keyNegative))
         {
-            GetComponent<Rigidbody>().velocity -= v3Force;
+            myBody.velocity -= v3Force;
+        }
+    }
+
+
+    void PlayerJump()
+    {
+        // Input.GetButtonDown function works only when the button is being pressed down.
+        // Also here we check if the Player is on Ground or not
+        if (Input.GetButtonDown("Jump") && onPlatform)
+        {
+            Vector3 velocity = myBody.velocity;
+            velocity.y = jumpForce ;
+            myBody.velocity = velocity * 0.3f;
+            //myBody.AddForce(new Vector3(0f, jumpForce), ForceMode.Impulse);
+            onPlatform = false;
+        }
+    }
+
+    private void OnCollisionEnter(Collision collision)
+    {
+        if (collision.gameObject.CompareTag(PLATFORM_TAG))
+        {
+            onPlatform = true;
+            Vector3 velocity = myBody.velocity;
+            //velocity.y = -0.5f;
+            myBody.velocity = velocity;
         }
     }
 }
+
+

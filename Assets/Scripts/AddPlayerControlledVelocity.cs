@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
+
 public class AddPlayerControlledVelocity : MonoBehaviour
 {
     [SerializeField]
@@ -20,6 +21,8 @@ public class AddPlayerControlledVelocity : MonoBehaviour
     private string PLATFORM_TAG = "Platform";
 
     private Rigidbody myBody;
+
+
 
     private void Awake()
     {
@@ -75,6 +78,9 @@ public class AddPlayerControlledVelocity : MonoBehaviour
             myBody.velocity = velocity;
         }
     }
+
+
+   
 }
 
 

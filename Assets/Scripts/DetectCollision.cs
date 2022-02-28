@@ -10,17 +10,13 @@ public class DetectCollision : MonoBehaviour
     {
        
         string activeSceneName = SceneManager.GetActiveScene().name;
-        if (col.gameObject.name == "End" && activeSceneName == "Level 0")
+        if (col.gameObject.name == "End" && activeSceneName != "Level 1")
         {
             Debug.Log("activeSceneName");
             SceneManager.LoadScene("Level 1");
 
         }
-        if (col.gameObject.name == "End" && activeSceneName == "Level 1")
-        {
-            SceneManager.LoadScene("Level 2");
-        }
-        if (col.gameObject.name == "End" && activeSceneName == "Level 2")
+        else if (col.gameObject.name == "End" && activeSceneName == "Level 1")
         {
             SceneManager.LoadScene("Level 0");
         }

@@ -12,6 +12,10 @@ GameObject:
   - component: {fileID: 574163746468250419}
   - component: {fileID: 4082158192163729194}
   - component: {fileID: 6460172966101666121}
+  - component: {fileID: -894649549876617659}
+  - component: {fileID: 8215205568631320202}
+  - component: {fileID: 5588731609657374727}
+  - component: {fileID: 4546212099005630039}
   m_Layer: 0
   m_Name: Bullet
   m_TagString: Untagged
@@ -95,3 +99,63 @@ SphereCollider:
   serializedVersion: 2
   m_Radius: 0.5
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &-894649549876617659
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5615941298512738264}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1fd0327afcc6d4cae92e10715205a675, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  shootingSpeed: 5
+  lifeTime: 3
+  damageToGive: 1
+--- !u!114 &8215205568631320202
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5615941298512738264}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4b97e8e4bdafa848a115900f99ad242, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  shootingSpeed: 5
+  lifeTime: 3
+  damageToGive: 1
+--- !u!114 &5588731609657374727
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5615941298512738264}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f2f2a53405e47d347981eaf9a0fd3931, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  shootingSpeed: 5
+  lifeTime: 3
+  damageToGive: 1
+--- !u!114 &4546212099005630039
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5615941298512738264}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bb1984c981853d1468a37b3706a34762, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  shootingSpeed: 5
+  lifeTime: 3
+  damageToGive: 1

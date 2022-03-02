@@ -15,13 +15,38 @@ public class PlayerGunController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetMouseButtonDown(0))
+        if (Input.GetKeyDown("right"))
         {
-            theGun.isFiring = true;
+            theGun.isFiringFront = true;
         }
-        if (Input.GetMouseButtonUp(0))
+        if (Input.GetKeyUp("right"))
         {
-            theGun.isFiring = false;
+            theGun.isFiringFront = false;
         }
+        if (Input.GetKeyDown("left"))
+        {
+            theGun.isFiringBack = true;
+        }
+        if (Input.GetKeyUp("left"))
+        {
+            theGun.isFiringBack = false;
+        }
+        if (Input.GetKeyDown("up"))
+        {
+            theGun.isFiringDown = true;
+        }
+        if (Input.GetKeyUp("up"))
+        {
+            theGun.isFiringDown = false;
+        }
+        if (Input.GetKeyDown("down"))
+        {
+            theGun.isFiringUp = true;
+        }
+        if (Input.GetKeyUp("down"))
+        {
+            theGun.isFiringUp = false;
+        }
+
     }
 }

@@ -8,7 +8,7 @@ public class DetectCollision : MonoBehaviour
    
     private void OnCollisionEnter(Collision col)
     {
-       
+
         string activeSceneName = SceneManager.GetActiveScene().name;
         if (col.gameObject.name == "End" && activeSceneName == "Level 0")
         {
@@ -25,11 +25,11 @@ public class DetectCollision : MonoBehaviour
             SceneManager.LoadScene("Level 0");
         }
 
-        if (col.gameObject.name=="Disapperaring Cube")
+        if (col.gameObject.name == "Disapperaring Cube")
         {
             Debug.Log("Collision Detected");
             col.gameObject.GetComponent<Renderer>().material.color = Color.red;
-            Destroy (col.gameObject,2);
+            Destroy(col.gameObject, 2);
         }
     }
 

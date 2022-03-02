@@ -31,7 +31,7 @@ public class RestartLevel : MonoBehaviour
         {
             SceneManager.LoadScene("Level 2");
         }
-        if(collision.gameObject.name == "End" && activeSceneName == "Level 2")
+        if (collision.gameObject.name == "End" && activeSceneName == "Level 2")
         {
             // Debug.Log("activeSceneName");
             SceneManager.LoadScene("Level 0");

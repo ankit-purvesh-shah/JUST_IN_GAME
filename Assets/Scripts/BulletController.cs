@@ -9,6 +9,7 @@ public class BulletController : MonoBehaviour
     public float lifeTime;
     public int damageToGive;
     // Start is called before the first frame update
+
     void Start()
     {
         
@@ -17,10 +18,13 @@ public class BulletController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+  
         transform.Translate(Vector3.forward * shootingSpeed * Time.deltaTime);
+        //transform.Translate(Vector3.back * shootingSpeed * Time.deltaTime);
 
         
-        //lifeTime -= Time.deltaTime;
+ 
+        lifeTime -= Time.deltaTime;
         if(lifeTime <= 0)
         {
             Destroy(gameObject);

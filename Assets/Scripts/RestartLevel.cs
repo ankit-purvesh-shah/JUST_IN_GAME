@@ -21,14 +21,19 @@ public class RestartLevel : MonoBehaviour
     private void OnCollisionEnter(Collision collision)
     {
         string activeSceneName = SceneManager.GetActiveScene().name;
-        if (collision.gameObject.name == "End" && activeSceneName != "Level 1")
+        if (collision.gameObject.name == "End" && activeSceneName == "Level 0")
         {
-            Debug.Log("activeSceneName");
+            // Debug.Log("activeSceneName");
             SceneManager.LoadScene("Level 1");
 
         }
-        else if (collision.gameObject.name == "End" && activeSceneName == "Level 1")
+        if (collision.gameObject.name == "End" && activeSceneName == "Level 1")
         {
+            SceneManager.LoadScene("Level 2");
+        }
+        if (collision.gameObject.name == "End" && activeSceneName == "Level 2")
+        {
+            // Debug.Log("activeSceneName");
             SceneManager.LoadScene("Level 0");
         }
     }

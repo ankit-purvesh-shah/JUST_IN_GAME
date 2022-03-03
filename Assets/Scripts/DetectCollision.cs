@@ -22,6 +22,10 @@ public class DetectCollision : MonoBehaviour
         }
         if (col.gameObject.name == "End" && activeSceneName == "Level 2")
         {
+            SceneManager.LoadScene("Level 3");
+        }
+        if (col.gameObject.name == "End" && activeSceneName == "Level 3")
+        {
             SceneManager.LoadScene("Level 0");
         }
 

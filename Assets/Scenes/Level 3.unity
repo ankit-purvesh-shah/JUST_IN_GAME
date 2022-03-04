@@ -12492,10 +12492,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 158675354, guid: 6fd494b6f2de14aeca8770b438214e24, type: 3}
-      propertyPath: countText
-      value: 
-      objectReference: {fileID: 1731329876}
     - target: {fileID: 1601278110675878085, guid: 6fd494b6f2de14aeca8770b438214e24, type: 3}
       propertyPath: m_Name
       value: Player 1 Variant

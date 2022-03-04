@@ -16952,5 +16952,6 @@ PrefabInstance:
       propertyPath: firePointFront
       value: 
       objectReference: {fileID: 1950516391}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 158675354, guid: 6fd494b6f2de14aeca8770b438214e24, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 6fd494b6f2de14aeca8770b438214e24, type: 3}

@@ -1084,6 +1084,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 158675354, guid: fcd321fac0dbb449dbe5c274c02c8da6, type: 3}
+      propertyPath: countText
+      value: 
+      objectReference: {fileID: 1626115623}
     - target: {fileID: 604652731, guid: fcd321fac0dbb449dbe5c274c02c8da6, type: 3}
       propertyPath: firePointUp
       value: 
@@ -1156,7 +1160,8 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 158675354, guid: fcd321fac0dbb449dbe5c274c02c8da6, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: fcd321fac0dbb449dbe5c274c02c8da6, type: 3}
 --- !u!4 &604652729 stripped
 Transform:

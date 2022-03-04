@@ -700,19 +700,6 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 8268555052368567606, guid: fcd321fac0dbb449dbe5c274c02c8da6, type: 3}
   m_PrefabInstance: {fileID: 1223659351}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &158675354
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 158675353}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c076708a2cbd5e9448a67b4e67674da3, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  countText: {fileID: 0}
 --- !u!1 &178514657
 GameObject:
   m_ObjectHideFlags: 0
@@ -5082,6 +5069,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: Canvas
       objectReference: {fileID: 0}
+    - target: {fileID: 7276332067373640648, guid: 3b1cfc0e78d718c44bcd73c58affb0f6, type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7276332067373640648, guid: 3b1cfc0e78d718c44bcd73c58affb0f6, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3b1cfc0e78d718c44bcd73c58affb0f6, type: 3}
 --- !u!1 &1172895999
@@ -5524,42 +5519,14 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 604652731, guid: fcd321fac0dbb449dbe5c274c02c8da6, type: 3}
-      propertyPath: bullet
+    - target: {fileID: 158675354, guid: fcd321fac0dbb449dbe5c274c02c8da6, type: 3}
+      propertyPath: countText
       value: 
-      objectReference: {fileID: -894649549876617659, guid: ee462554f1aac4e66810fddf81c957e3, type: 3}
-    - target: {fileID: 604652731, guid: fcd321fac0dbb449dbe5c274c02c8da6, type: 3}
-      propertyPath: bulletUp
-      value: 
-      objectReference: {fileID: 4546212099005630039, guid: ee462554f1aac4e66810fddf81c957e3, type: 3}
-    - target: {fileID: 604652731, guid: fcd321fac0dbb449dbe5c274c02c8da6, type: 3}
-      propertyPath: firePoint
-      value: 
-      objectReference: {fileID: 20348031}
-    - target: {fileID: 604652731, guid: fcd321fac0dbb449dbe5c274c02c8da6, type: 3}
-      propertyPath: bulletBack
-      value: 
-      objectReference: {fileID: 8215205568631320202, guid: ee462554f1aac4e66810fddf81c957e3, type: 3}
-    - target: {fileID: 604652731, guid: fcd321fac0dbb449dbe5c274c02c8da6, type: 3}
-      propertyPath: bulletDown
-      value: 
-      objectReference: {fileID: 5588731609657374727, guid: ee462554f1aac4e66810fddf81c957e3, type: 3}
-    - target: {fileID: 604652731, guid: fcd321fac0dbb449dbe5c274c02c8da6, type: 3}
-      propertyPath: isFiringUp
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 604652731, guid: fcd321fac0dbb449dbe5c274c02c8da6, type: 3}
-      propertyPath: bulletSpeed
-      value: 3
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 1731329876}
     - target: {fileID: 604652731, guid: fcd321fac0dbb449dbe5c274c02c8da6, type: 3}
       propertyPath: firePointUp
       value: 
       objectReference: {fileID: 2033600709}
-    - target: {fileID: 604652731, guid: fcd321fac0dbb449dbe5c274c02c8da6, type: 3}
-      propertyPath: isFiringDown
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 604652731, guid: fcd321fac0dbb449dbe5c274c02c8da6, type: 3}
       propertyPath: firePointBack
       value: 
@@ -5572,22 +5539,10 @@ PrefabInstance:
       propertyPath: firePointFront
       value: 
       objectReference: {fileID: 20348031}
-    - target: {fileID: 604652731, guid: fcd321fac0dbb449dbe5c274c02c8da6, type: 3}
-      propertyPath: timeBetweenShots
-      value: 0.3
-      objectReference: {fileID: 0}
     - target: {fileID: 1175448978, guid: fcd321fac0dbb449dbe5c274c02c8da6, type: 3}
       propertyPath: countText
       value: 
       objectReference: {fileID: 1731329876}
-    - target: {fileID: 1223659355, guid: fcd321fac0dbb449dbe5c274c02c8da6, type: 3}
-      propertyPath: bullet
-      value: 
-      objectReference: {fileID: 0}
-    - target: {fileID: 1223659355, guid: fcd321fac0dbb449dbe5c274c02c8da6, type: 3}
-      propertyPath: firePoint
-      value: 
-      objectReference: {fileID: 20348031}
     - target: {fileID: 4306934304057664367, guid: fcd321fac0dbb449dbe5c274c02c8da6, type: 3}
       propertyPath: healthBar
       value: 
@@ -5640,7 +5595,8 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 158675354, guid: fcd321fac0dbb449dbe5c274c02c8da6, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: fcd321fac0dbb449dbe5c274c02c8da6, type: 3}
 --- !u!4 &1223659353 stripped
 Transform:

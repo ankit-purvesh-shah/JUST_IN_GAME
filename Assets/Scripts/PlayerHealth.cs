@@ -8,11 +8,12 @@ public class PlayerHealth : MonoBehaviour
     //[SerializeField]
     float multiplicationFactor = 3;
 
-    public int maxhealth = 1000;
-    public int currenthealth;
+    public float maxhealth = 1000;
+    public float currenthealth;
     public HealthBarScript healthBar;
 
     private bool collided = false;
+    private float enemyMass = 0;
     PlayerHealth playerHealth;
     GameObject playerObject;
     // Start is called before the first frame update
@@ -25,11 +26,9 @@ public class PlayerHealth : MonoBehaviour
     {
         playerHealth = GetComponent<PlayerHealth>();
         playerObject = GameObject.FindGameObjectWithTag("Player");
-
-
     }
 
-    void TakeDamage(int damage)
+    void TakeDamage(float damage)
     {
         currenthealth -= damage;
         healthBar.SetHealth(currenthealth);
@@ -38,15 +37,11 @@ public class PlayerHealth : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        Debug.Log("In Update");
-        //Debug.Log(playerObject.GetComponent<Collider>().tag);
-        if (collided)
+        
+        if (collided && enemyMass != 0)
         {
-            //Debug.Log(playerHealth.currenthealth);
-            //Debug.Log(Time.deltaTime);
-            Debug.Log(currenthealth);
-            float enemyMass = playerObject.GetComponent<Rigidbody>().mass;
-            TakeDamage((int)(multiplicationFactor * enemyMass));
+            
+            TakeDamage((multiplicationFactor * enemyMass));
 
         }
     }
@@ -57,6 +52,7 @@ public class PlayerHealth : MonoBehaviour
         if (collision.gameObject.tag == "Enemy")
         {
             collided = true;
+            enemyMass = collision.rigidbody.mass;
         }
     }
 

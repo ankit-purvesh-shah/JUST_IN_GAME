@@ -12,7 +12,16 @@ public class Spawn : MonoBehaviour
     GameObject gameObjToCreate;
 
     [SerializeField]
+    float minValue;
+
+    [SerializeField]
+    float maxValue;
+
+    [SerializeField]
     Vector3 v3SpawnPositionJitter;
+
+    [SerializeField]
+    Vector3 RandomnessJitter;
 
     [SerializeField]
     GameObject player;
@@ -33,7 +42,9 @@ public class Spawn : MonoBehaviour
     {   
 
         fTimer -= Time.deltaTime;
-        if(fTimer <= 0)
+        //Random rand = new System.Random();
+        float res;
+        if (fTimer <= 0)
         {
             float xdif = player.transform.position.x - transform.position.x;
             xdif = xdif < 0 ? xdif * -1 : xdif;
@@ -46,12 +57,30 @@ public class Spawn : MonoBehaviour
             {
                 fTimer = fTimeIntervals;
                 Vector3 v3SpawnPos = transform.position;
-                Vector3 newEnemy = new Vector3(0.25f, 0, 0);
+                Vector3 newEnemy1 = new Vector3(0, 0, 0);
+                Vector3 newEnemy2 = new Vector3(0, 0, 0);
                 //v3SpawnPos += Vector3.right * v3SpawnPositionJitter.x * (Random.value - 0.5f);
                 //v3SpawnPos += Vector3.up * v3SpawnPositionJitter.y * (Random.value - 0.5f);
                 //v3SpawnPos += Vector3.forward * v3SpawnPositionJitter.z * (Random.value - 0.5f);
-                Instantiate(gameObjToCreate, v3SpawnPos, Quaternion.identity);
-                Instantiate(gameObjToCreate, v3SpawnPos + newEnemy, Quaternion.identity);
+
+                if (RandomnessJitter.x != 0.0f)
+                {
+                    res = UnityEngine.Random.Range(minValue, (maxValue - minValue)/2.0f);
+                    //Debug.Log(res);
+                    newEnemy1.x = res;
+                    res = UnityEngine.Random.Range(minValue, (maxValue - minValue) / 2.0f);
+                    newEnemy2.x = res;
+                }
+                else if (RandomnessJitter.z != 0.0f)
+                {
+                    res = UnityEngine.Random.Range(minValue, maxValue);
+                    Debug.Log(res);
+                    newEnemy1.z = res;
+                    res = UnityEngine.Random.Range(minValue, maxValue);
+                    newEnemy2.z = res;
+                }
+                Instantiate(gameObjToCreate, v3SpawnPos + newEnemy1, Quaternion.identity);
+                Instantiate(gameObjToCreate, v3SpawnPos + newEnemy2, Quaternion.identity);
                 enemyCount -= 2;
                 Debug.Log("Enemy created");
             }

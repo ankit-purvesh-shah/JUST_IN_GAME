@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 705507994}
-  m_IndirectSpecularColor: {r: 0.44329616, g: 0.4925521, b: 0.5722076, a: 1}
+  m_IndirectSpecularColor: {r: 0.44329694, g: 0.49255353, b: 0.57220906, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -3117,9 +3117,21 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 158675353}
     - target: {fileID: 804303166396452570, guid: 42d76bfa73b4ee3468e9e32a811ae165, type: 3}
+      propertyPath: maxValue
+      value: 0.85
+      objectReference: {fileID: 0}
+    - target: {fileID: 804303166396452570, guid: 42d76bfa73b4ee3468e9e32a811ae165, type: 3}
+      propertyPath: minValue
+      value: -0.7
+      objectReference: {fileID: 0}
+    - target: {fileID: 804303166396452570, guid: 42d76bfa73b4ee3468e9e32a811ae165, type: 3}
       propertyPath: gameObjToCreate
       value: 
       objectReference: {fileID: 8268555052368567606, guid: 4111acfda6f3385448afc662d4b8490f, type: 3}
+    - target: {fileID: 804303166396452570, guid: 42d76bfa73b4ee3468e9e32a811ae165, type: 3}
+      propertyPath: RandomnessJitter.z
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 804303166396452571, guid: 42d76bfa73b4ee3468e9e32a811ae165, type: 3}
       propertyPath: m_Name
       value: Spawner 2
@@ -3130,7 +3142,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 804303166396452573, guid: 42d76bfa73b4ee3468e9e32a811ae165, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -3.92
+      value: -3.787
       objectReference: {fileID: 0}
     - target: {fileID: 804303166396452573, guid: 42d76bfa73b4ee3468e9e32a811ae165, type: 3}
       propertyPath: m_LocalPosition.y
@@ -3138,7 +3150,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 804303166396452573, guid: 42d76bfa73b4ee3468e9e32a811ae165, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 2.209
+      value: 2.414
       objectReference: {fileID: 0}
     - target: {fileID: 804303166396452573, guid: 42d76bfa73b4ee3468e9e32a811ae165, type: 3}
       propertyPath: m_LocalRotation.w
@@ -5547,6 +5559,14 @@ PrefabInstance:
       propertyPath: healthBar
       value: 
       objectReference: {fileID: 1510400307}
+    - target: {fileID: 4306934304057664367, guid: fcd321fac0dbb449dbe5c274c02c8da6, type: 3}
+      propertyPath: maxhealth
+      value: 100000
+      objectReference: {fileID: 0}
+    - target: {fileID: 4306934304057664367, guid: fcd321fac0dbb449dbe5c274c02c8da6, type: 3}
+      propertyPath: currenthealth
+      value: 100000
+      objectReference: {fileID: 0}
     - target: {fileID: 8268555052368567606, guid: fcd321fac0dbb449dbe5c274c02c8da6, type: 3}
       propertyPath: m_Name
       value: Player
@@ -6199,9 +6219,21 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 158675353}
     - target: {fileID: 804303166396452570, guid: 42d76bfa73b4ee3468e9e32a811ae165, type: 3}
+      propertyPath: maxValue
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 804303166396452570, guid: 42d76bfa73b4ee3468e9e32a811ae165, type: 3}
+      propertyPath: minValue
+      value: -0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 804303166396452570, guid: 42d76bfa73b4ee3468e9e32a811ae165, type: 3}
       propertyPath: gameObjToCreate
       value: 
       objectReference: {fileID: 8268555052368567606, guid: 94a75348081e432419fd0b222f230b04, type: 3}
+    - target: {fileID: 804303166396452570, guid: 42d76bfa73b4ee3468e9e32a811ae165, type: 3}
+      propertyPath: RandomnessJitter.z
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 804303166396452571, guid: 42d76bfa73b4ee3468e9e32a811ae165, type: 3}
       propertyPath: m_Name
       value: Spawner 4
@@ -6212,15 +6244,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 804303166396452573, guid: 42d76bfa73b4ee3468e9e32a811ae165, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -5.86
+      value: -5.571
       objectReference: {fileID: 0}
     - target: {fileID: 804303166396452573, guid: 42d76bfa73b4ee3468e9e32a811ae165, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.435
+      value: 0.413
       objectReference: {fileID: 0}
     - target: {fileID: 804303166396452573, guid: 42d76bfa73b4ee3468e9e32a811ae165, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -2.538
+      value: -2.956
       objectReference: {fileID: 0}
     - target: {fileID: 804303166396452573, guid: 42d76bfa73b4ee3468e9e32a811ae165, type: 3}
       propertyPath: m_LocalRotation.w
@@ -8010,9 +8042,21 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 158675353}
     - target: {fileID: 804303166396452570, guid: 42d76bfa73b4ee3468e9e32a811ae165, type: 3}
+      propertyPath: maxValue
+      value: 0.85
+      objectReference: {fileID: 0}
+    - target: {fileID: 804303166396452570, guid: 42d76bfa73b4ee3468e9e32a811ae165, type: 3}
+      propertyPath: minValue
+      value: -0.85
+      objectReference: {fileID: 0}
+    - target: {fileID: 804303166396452570, guid: 42d76bfa73b4ee3468e9e32a811ae165, type: 3}
       propertyPath: gameObjToCreate
       value: 
       objectReference: {fileID: 8268555052368567606, guid: 15e1732641e645947a94d588842642d3, type: 3}
+    - target: {fileID: 804303166396452570, guid: 42d76bfa73b4ee3468e9e32a811ae165, type: 3}
+      propertyPath: RandomnessJitter.z
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 804303166396452571, guid: 42d76bfa73b4ee3468e9e32a811ae165, type: 3}
       propertyPath: m_Name
       value: Spawner 1
@@ -8023,7 +8067,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 804303166396452573, guid: 42d76bfa73b4ee3468e9e32a811ae165, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -1.96
+      value: -1.77
       objectReference: {fileID: 0}
     - target: {fileID: 804303166396452573, guid: 42d76bfa73b4ee3468e9e32a811ae165, type: 3}
       propertyPath: m_LocalPosition.y
@@ -8031,7 +8075,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 804303166396452573, guid: 42d76bfa73b4ee3468e9e32a811ae165, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 3.47
+      value: 2.848
       objectReference: {fileID: 0}
     - target: {fileID: 804303166396452573, guid: 42d76bfa73b4ee3468e9e32a811ae165, type: 3}
       propertyPath: m_LocalRotation.w
@@ -8627,9 +8671,21 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 158675353}
     - target: {fileID: 804303166396452570, guid: 42d76bfa73b4ee3468e9e32a811ae165, type: 3}
+      propertyPath: maxValue
+      value: 0.8
+      objectReference: {fileID: 0}
+    - target: {fileID: 804303166396452570, guid: 42d76bfa73b4ee3468e9e32a811ae165, type: 3}
+      propertyPath: minValue
+      value: -0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 804303166396452570, guid: 42d76bfa73b4ee3468e9e32a811ae165, type: 3}
       propertyPath: gameObjToCreate
       value: 
       objectReference: {fileID: 8268555052368567606, guid: 325284556ab5a2544bd493cfe1f755bd, type: 3}
+    - target: {fileID: 804303166396452570, guid: 42d76bfa73b4ee3468e9e32a811ae165, type: 3}
+      propertyPath: RandomnessJitter.z
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 804303166396452571, guid: 42d76bfa73b4ee3468e9e32a811ae165, type: 3}
       propertyPath: m_Name
       value: Spawner 3
@@ -8640,7 +8696,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 804303166396452573, guid: 42d76bfa73b4ee3468e9e32a811ae165, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -5.607
+      value: -5.355
       objectReference: {fileID: 0}
     - target: {fileID: 804303166396452573, guid: 42d76bfa73b4ee3468e9e32a811ae165, type: 3}
       propertyPath: m_LocalPosition.y
@@ -8648,7 +8704,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 804303166396452573, guid: 42d76bfa73b4ee3468e9e32a811ae165, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 0.682
+      value: 0.842
       objectReference: {fileID: 0}
     - target: {fileID: 804303166396452573, guid: 42d76bfa73b4ee3468e9e32a811ae165, type: 3}
       propertyPath: m_LocalRotation.w
@@ -9014,6 +9070,18 @@ PrefabInstance:
       propertyPath: player
       value: 
       objectReference: {fileID: 158675353}
+    - target: {fileID: 804303166396452570, guid: 42d76bfa73b4ee3468e9e32a811ae165, type: 3}
+      propertyPath: maxValue
+      value: 0.85
+      objectReference: {fileID: 0}
+    - target: {fileID: 804303166396452570, guid: 42d76bfa73b4ee3468e9e32a811ae165, type: 3}
+      propertyPath: minValue
+      value: -0.6
+      objectReference: {fileID: 0}
+    - target: {fileID: 804303166396452570, guid: 42d76bfa73b4ee3468e9e32a811ae165, type: 3}
+      propertyPath: RandomnessJitter.x
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 804303166396452571, guid: 42d76bfa73b4ee3468e9e32a811ae165, type: 3}
       propertyPath: m_Name
       value: Spawner 0
@@ -9024,15 +9092,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 804303166396452573, guid: 42d76bfa73b4ee3468e9e32a811ae165, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0.113
+      value: 0.409
       objectReference: {fileID: 0}
     - target: {fileID: 804303166396452573, guid: 42d76bfa73b4ee3468e9e32a811ae165, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.109
+      value: 0.117
       objectReference: {fileID: 0}
     - target: {fileID: 804303166396452573, guid: 42d76bfa73b4ee3468e9e32a811ae165, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 0.948
+      value: 1.394
       objectReference: {fileID: 0}
     - target: {fileID: 804303166396452573, guid: 42d76bfa73b4ee3468e9e32a811ae165, type: 3}
       propertyPath: m_LocalRotation.w

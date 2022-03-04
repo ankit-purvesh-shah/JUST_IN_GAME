@@ -18,6 +18,15 @@ public class RestartLevel : MonoBehaviour
 
     }
 
+    public void LoadMainMenu()
+    {
+        SceneManager.LoadScene("Main Menu");
+    }
+
+    public void restartLevel()
+    {
+        SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+    }
     private void OnCollisionEnter(Collision collision)
     {
         string activeSceneName = SceneManager.GetActiveScene().name;
@@ -39,7 +48,7 @@ public class RestartLevel : MonoBehaviour
         if (collision.gameObject.name == "End" && activeSceneName == "Level 3")
         {
             // Debug.Log("activeSceneName");
-            SceneManager.LoadScene("Level 0");
+            SceneManager.LoadScene("Main Menu");
         }
     }
 }

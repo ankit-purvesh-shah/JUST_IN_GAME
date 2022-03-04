@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 705507994}
-  m_IndirectSpecularColor: {r: 0.4432977, g: 0.4925527, b: 0.572207, a: 1}
+  m_IndirectSpecularColor: {r: 0.443297, g: 0.49255174, b: 0.5722053, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -9819,6 +9819,22 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1370744103, guid: 3b1cfc0e78d718c44bcd73c58affb0f6, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 578758305}
+    - target: {fileID: 1370744103, guid: 3b1cfc0e78d718c44bcd73c58affb0f6, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: restartLevel
+      objectReference: {fileID: 0}
+    - target: {fileID: 1554440537, guid: 3b1cfc0e78d718c44bcd73c58affb0f6, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 578758305}
+    - target: {fileID: 1554440537, guid: 3b1cfc0e78d718c44bcd73c58affb0f6, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: LoadMainMenu
+      objectReference: {fileID: 0}
     - target: {fileID: 4143039084555860233, guid: 3b1cfc0e78d718c44bcd73c58affb0f6, type: 3}
       propertyPath: m_Pivot.x
       value: 0
@@ -16256,14 +16272,6 @@ PrefabInstance:
       propertyPath: healthBar
       value: 
       objectReference: {fileID: 1318926005}
-    - target: {fileID: 6864157745169071772, guid: 6fd494b6f2de14aeca8770b438214e24, type: 3}
-      propertyPath: maxhealth
-      value: 100000
-      objectReference: {fileID: 0}
-    - target: {fileID: 6864157745169071772, guid: 6fd494b6f2de14aeca8770b438214e24, type: 3}
-      propertyPath: currenthealth
-      value: 100000
-      objectReference: {fileID: 0}
     - target: {fileID: 7243810167920990536, guid: 6fd494b6f2de14aeca8770b438214e24, type: 3}
       propertyPath: firePointUp
       value: 
@@ -16280,6 +16288,5 @@ PrefabInstance:
       propertyPath: firePointFront
       value: 
       objectReference: {fileID: 1950516391}
-    m_RemovedComponents:
-    - {fileID: 7243810167432965225, guid: 6fd494b6f2de14aeca8770b438214e24, type: 3}
+    m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 6fd494b6f2de14aeca8770b438214e24, type: 3}

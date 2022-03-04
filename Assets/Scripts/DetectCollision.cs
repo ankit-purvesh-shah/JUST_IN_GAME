@@ -19,24 +19,6 @@ public class DetectCollision : MonoBehaviour
         playerObject = GameObject.FindGameObjectWithTag("Player");
     }
 
-
-    //private void FixedUpdate()
-    //{
-    //    Debug.Log("In Update");
-    //    //Debug.Log(playerObject.GetComponent<Collider>().tag);
-    //    if (collided)
-    //    {
-    //        Debug.Log(playerHealth.currenthealth);
-    //        //Debug.Log(Time.deltaTime);
-    //        float enemyMass = playerObject.GetComponent<Rigidbody>().mass;
-    //        playerHealth.currenthealth -= (int)(multiplicationFactor * enemyMass);
-
-    //    }
-    //    if (playerHealth.currenthealth <= 0)
-    //    {
-    //        restartLevel();
-    //    }
-    //}
     private void Update()
     {
         if (playerHealth.currenthealth <= 0)
@@ -47,26 +29,6 @@ public class DetectCollision : MonoBehaviour
 
     private void OnCollisionEnter(Collision col)
     {
-
-        //string activeSceneName = SceneManager.GetActiveScene().name;
-        //if (col.gameObject.name == "End" && activeSceneName == "Level 0")
-        //{
-        //    Debug.Log("activeSceneName");
-        //    SceneManager.LoadScene("Level 1");
-
-        //}
-        //if (col.gameObject.name == "End" && activeSceneName == "Level 1")
-        //{
-        //    SceneManager.LoadScene("Level 2");
-        //}
-        //if (col.gameObject.name == "End" && activeSceneName == "Level 2")
-        //{
-        //    SceneManager.LoadScene("Level 3");
-        //}
-        //if (col.gameObject.name == "End" && activeSceneName == "Level 3")
-        //{
-        //    SceneManager.LoadScene("Level 0");
-        //}
 
         if (playerHealth.currenthealth <= 0)
         {
@@ -84,20 +46,9 @@ public class DetectCollision : MonoBehaviour
             Destroy(col.gameObject, 2);
         }
 
-        //if (col.gameObject.tag == "Enemy")
-        //{
-        //    collided = true;
-        //}
     }
 
 
-    //private void OnCollisionExit(Collision collision)
-    //{
-    //    if (collision.gameObject.tag == "Enemy")
-    //    {
-    //        collided = false;
-    //    }
-    //}
 
     private void nextLevel()
     {
@@ -118,7 +69,7 @@ public class DetectCollision : MonoBehaviour
         }
         if (activeSceneName == "Level 3")
         {
-            SceneManager.LoadScene("Level 0");
+            SceneManager.LoadScene("Main Menu");
         }
     }
     private void restartLevel()

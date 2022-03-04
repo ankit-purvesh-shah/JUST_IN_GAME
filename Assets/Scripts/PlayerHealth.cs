@@ -74,6 +74,13 @@ public class PlayerHealth : MonoBehaviour
             collided = true;
             enemyMass = collision.rigidbody.mass;
         }
+        if (collision.gameObject.CompareTag("Reward"))
+        {
+            collision.gameObject.SetActive(false);
+            HealHealth(healFactor);
+            count = count + 1;
+            SetCountText();
+        }
     }
     void SetCountText()
     {
@@ -87,12 +94,6 @@ public class PlayerHealth : MonoBehaviour
         {
             collided = false;
         }
-        if (collision.gameObject.CompareTag("Reward"))
-        {
-            collision.gameObject.SetActive(false);
-            HealHealth(healFactor);
-            count = count + 1;
-            SetCountText();
-        }
+        
     }
 }

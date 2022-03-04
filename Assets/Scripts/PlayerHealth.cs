@@ -1,6 +1,8 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using TMPro;
+
 
 public class PlayerHealth : MonoBehaviour
 {
@@ -16,11 +18,20 @@ public class PlayerHealth : MonoBehaviour
     private float enemyMass = 0;
     PlayerHealth playerHealth;
     GameObject playerObject;
+
+
+    // Rewards Health Heal
+    private bool rewardsCollected = false;
+    private readonly float healFactor=150.0F;
+    public TextMeshProUGUI countText;
+    private int count;
     // Start is called before the first frame update
     void Start()
     {
         currenthealth = maxhealth;
         healthBar.SetMaxHealth(maxhealth);
+        count = 0;
+        SetCountText();
     }
     private void Awake()
     {
@@ -31,6 +42,15 @@ public class PlayerHealth : MonoBehaviour
     void TakeDamage(float damage)
     {
         currenthealth -= damage;
+        healthBar.SetHealth(currenthealth);
+    }
+
+
+    void HealHealth(float healXP)
+    {
+        Debug.Log(currenthealth);
+        currenthealth += healXP;
+        Debug.Log(currenthealth);
         healthBar.SetHealth(currenthealth);
     }
 
@@ -55,12 +75,24 @@ public class PlayerHealth : MonoBehaviour
             enemyMass = collision.rigidbody.mass;
         }
     }
+    void SetCountText()
+    {
+        countText.text = "Score: " + count.ToString();
+    }
 
     private void OnCollisionExit(Collision collision)
     {
+        Debug.Log(collision.gameObject.tag);
         if (collision.gameObject.tag == "Enemy")
         {
             collided = false;
+        }
+        if (collision.gameObject.CompareTag("Reward"))
+        {
+            collision.gameObject.SetActive(false);
+            HealHealth(healFactor);
+            count = count + 1;
+            SetCountText();
         }
     }
 }

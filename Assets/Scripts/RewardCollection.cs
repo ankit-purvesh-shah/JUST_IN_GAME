@@ -32,7 +32,7 @@ public class RewardCollection : MonoBehaviour
         countText.text = "Score: " + count.ToString();
     }
     
-    private void OnCollisionEnter(Collision other)
+    /*private void OnCollisionEnter(Collision other)
     {
         if (other.gameObject.CompareTag("Reward"))
         {
@@ -40,5 +40,5 @@ public class RewardCollection : MonoBehaviour
             count = count + 1;
             SetCountText();
         }
-    }
+    }*/
 }

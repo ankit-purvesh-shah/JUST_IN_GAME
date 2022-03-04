@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.43954083, g: 0.48791152, b: 0.56814295, a: 1}
+  m_IndirectSpecularColor: {r: 0.4395416, g: 0.4879127, b: 0.56814486, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -1096,10 +1096,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 158675354, guid: fcd321fac0dbb449dbe5c274c02c8da6, type: 3}
-      propertyPath: countText
-      value: 
-      objectReference: {fileID: 1626115623}
     - target: {fileID: 604652731, guid: fcd321fac0dbb449dbe5c274c02c8da6, type: 3}
       propertyPath: firePointUp
       value: 
@@ -1116,7 +1112,7 @@ PrefabInstance:
       propertyPath: firePointFront
       value: 
       objectReference: {fileID: 2140930858}
-    - target: {fileID: 1175448978, guid: fcd321fac0dbb449dbe5c274c02c8da6, type: 3}
+    - target: {fileID: 4306934304057664367, guid: fcd321fac0dbb449dbe5c274c02c8da6, type: 3}
       propertyPath: countText
       value: 
       objectReference: {fileID: 1626115623}
@@ -1172,8 +1168,7 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents:
-    - {fileID: 158675354, guid: fcd321fac0dbb449dbe5c274c02c8da6, type: 3}
+    m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: fcd321fac0dbb449dbe5c274c02c8da6, type: 3}
 --- !u!4 &604652729 stripped
 Transform:

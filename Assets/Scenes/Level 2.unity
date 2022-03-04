@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 705507994}
-  m_IndirectSpecularColor: {r: 0.443297, g: 0.49255174, b: 0.5722053, a: 1}
+  m_IndirectSpecularColor: {r: 0.4432977, g: 0.4925527, b: 0.572207, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -1975,9 +1975,21 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 158675353}
     - target: {fileID: 804303166396452570, guid: 42d76bfa73b4ee3468e9e32a811ae165, type: 3}
+      propertyPath: maxValue
+      value: 0.75
+      objectReference: {fileID: 0}
+    - target: {fileID: 804303166396452570, guid: 42d76bfa73b4ee3468e9e32a811ae165, type: 3}
+      propertyPath: minValue
+      value: -0.75
+      objectReference: {fileID: 0}
+    - target: {fileID: 804303166396452570, guid: 42d76bfa73b4ee3468e9e32a811ae165, type: 3}
       propertyPath: gameObjToCreate
       value: 
       objectReference: {fileID: 8268555052368567606, guid: 94a75348081e432419fd0b222f230b04, type: 3}
+    - target: {fileID: 804303166396452570, guid: 42d76bfa73b4ee3468e9e32a811ae165, type: 3}
+      propertyPath: RandomnessJitter.x
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 804303166396452571, guid: 42d76bfa73b4ee3468e9e32a811ae165, type: 3}
       propertyPath: m_Name
       value: Spawner 4 (3)
@@ -1988,7 +2000,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 804303166396452573, guid: 42d76bfa73b4ee3468e9e32a811ae165, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -10.694
+      value: -11.305
       objectReference: {fileID: 0}
     - target: {fileID: 804303166396452573, guid: 42d76bfa73b4ee3468e9e32a811ae165, type: 3}
       propertyPath: m_LocalPosition.y
@@ -2678,6 +2690,18 @@ PrefabInstance:
       propertyPath: player
       value: 
       objectReference: {fileID: 158675353}
+    - target: {fileID: 804303166396452570, guid: 42d76bfa73b4ee3468e9e32a811ae165, type: 3}
+      propertyPath: maxValue
+      value: 0.8
+      objectReference: {fileID: 0}
+    - target: {fileID: 804303166396452570, guid: 42d76bfa73b4ee3468e9e32a811ae165, type: 3}
+      propertyPath: minValue
+      value: -0.8
+      objectReference: {fileID: 0}
+    - target: {fileID: 804303166396452570, guid: 42d76bfa73b4ee3468e9e32a811ae165, type: 3}
+      propertyPath: RandomnessJitter.z
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 804303166396452571, guid: 42d76bfa73b4ee3468e9e32a811ae165, type: 3}
       propertyPath: m_Name
       value: Spawner 0 (1)
@@ -2688,7 +2712,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 804303166396452573, guid: 42d76bfa73b4ee3468e9e32a811ae165, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -3.05
+      value: -2.86
       objectReference: {fileID: 0}
     - target: {fileID: 804303166396452573, guid: 42d76bfa73b4ee3468e9e32a811ae165, type: 3}
       propertyPath: m_LocalPosition.y
@@ -2696,7 +2720,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 804303166396452573, guid: 42d76bfa73b4ee3468e9e32a811ae165, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -2.39
+      value: -2.27
       objectReference: {fileID: 0}
     - target: {fileID: 804303166396452573, guid: 42d76bfa73b4ee3468e9e32a811ae165, type: 3}
       propertyPath: m_LocalRotation.w
@@ -5090,9 +5114,21 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 158675353}
     - target: {fileID: 804303166396452570, guid: 42d76bfa73b4ee3468e9e32a811ae165, type: 3}
+      propertyPath: maxValue
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 804303166396452570, guid: 42d76bfa73b4ee3468e9e32a811ae165, type: 3}
+      propertyPath: minValue
+      value: -0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 804303166396452570, guid: 42d76bfa73b4ee3468e9e32a811ae165, type: 3}
       propertyPath: gameObjToCreate
       value: 
       objectReference: {fileID: 8268555052368567606, guid: 94a75348081e432419fd0b222f230b04, type: 3}
+    - target: {fileID: 804303166396452570, guid: 42d76bfa73b4ee3468e9e32a811ae165, type: 3}
+      propertyPath: RandomnessJitter.x
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 804303166396452571, guid: 42d76bfa73b4ee3468e9e32a811ae165, type: 3}
       propertyPath: m_Name
       value: Spawner 4 (5)
@@ -5103,7 +5139,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 804303166396452573, guid: 42d76bfa73b4ee3468e9e32a811ae165, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -12.01
+      value: -12.54
       objectReference: {fileID: 0}
     - target: {fileID: 804303166396452573, guid: 42d76bfa73b4ee3468e9e32a811ae165, type: 3}
       propertyPath: m_LocalPosition.y
@@ -5248,9 +5284,21 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 158675353}
     - target: {fileID: 804303166396452570, guid: 42d76bfa73b4ee3468e9e32a811ae165, type: 3}
+      propertyPath: maxValue
+      value: 0.4
+      objectReference: {fileID: 0}
+    - target: {fileID: 804303166396452570, guid: 42d76bfa73b4ee3468e9e32a811ae165, type: 3}
+      propertyPath: minValue
+      value: -0.4
+      objectReference: {fileID: 0}
+    - target: {fileID: 804303166396452570, guid: 42d76bfa73b4ee3468e9e32a811ae165, type: 3}
       propertyPath: gameObjToCreate
       value: 
       objectReference: {fileID: 8268555052368567606, guid: 94a75348081e432419fd0b222f230b04, type: 3}
+    - target: {fileID: 804303166396452570, guid: 42d76bfa73b4ee3468e9e32a811ae165, type: 3}
+      propertyPath: RandomnessJitter.x
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 804303166396452571, guid: 42d76bfa73b4ee3468e9e32a811ae165, type: 3}
       propertyPath: m_Name
       value: Spawner 4 (4)
@@ -5261,7 +5309,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 804303166396452573, guid: 42d76bfa73b4ee3468e9e32a811ae165, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -11.616
+      value: -11.039
       objectReference: {fileID: 0}
     - target: {fileID: 804303166396452573, guid: 42d76bfa73b4ee3468e9e32a811ae165, type: 3}
       propertyPath: m_LocalPosition.y
@@ -5269,7 +5317,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 804303166396452573, guid: 42d76bfa73b4ee3468e9e32a811ae165, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 0.448
+      value: 0.584
       objectReference: {fileID: 0}
     - target: {fileID: 804303166396452573, guid: 42d76bfa73b4ee3468e9e32a811ae165, type: 3}
       propertyPath: m_LocalRotation.w
@@ -7816,9 +7864,21 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 158675353}
     - target: {fileID: 804303166396452570, guid: 42d76bfa73b4ee3468e9e32a811ae165, type: 3}
+      propertyPath: maxValue
+      value: 0.2
+      objectReference: {fileID: 0}
+    - target: {fileID: 804303166396452570, guid: 42d76bfa73b4ee3468e9e32a811ae165, type: 3}
+      propertyPath: minValue
+      value: -0.2
+      objectReference: {fileID: 0}
+    - target: {fileID: 804303166396452570, guid: 42d76bfa73b4ee3468e9e32a811ae165, type: 3}
       propertyPath: gameObjToCreate
       value: 
       objectReference: {fileID: 8268555052368567606, guid: 15e1732641e645947a94d588842642d3, type: 3}
+    - target: {fileID: 804303166396452570, guid: 42d76bfa73b4ee3468e9e32a811ae165, type: 3}
+      propertyPath: RandomnessJitter.z
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 804303166396452571, guid: 42d76bfa73b4ee3468e9e32a811ae165, type: 3}
       propertyPath: m_Name
       value: Spawner 1
@@ -7837,7 +7897,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 804303166396452573, guid: 42d76bfa73b4ee3468e9e32a811ae165, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -5.38
+      value: -5.348
       objectReference: {fileID: 0}
     - target: {fileID: 804303166396452573, guid: 42d76bfa73b4ee3468e9e32a811ae165, type: 3}
       propertyPath: m_LocalRotation.w
@@ -8165,6 +8225,18 @@ PrefabInstance:
       propertyPath: player
       value: 
       objectReference: {fileID: 158675353}
+    - target: {fileID: 804303166396452570, guid: 42d76bfa73b4ee3468e9e32a811ae165, type: 3}
+      propertyPath: maxValue
+      value: 0.65
+      objectReference: {fileID: 0}
+    - target: {fileID: 804303166396452570, guid: 42d76bfa73b4ee3468e9e32a811ae165, type: 3}
+      propertyPath: minValue
+      value: -0.65
+      objectReference: {fileID: 0}
+    - target: {fileID: 804303166396452570, guid: 42d76bfa73b4ee3468e9e32a811ae165, type: 3}
+      propertyPath: RandomnessJitter.x
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 804303166396452571, guid: 42d76bfa73b4ee3468e9e32a811ae165, type: 3}
       propertyPath: m_Name
       value: Spawner 0
@@ -8175,7 +8247,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 804303166396452573, guid: 42d76bfa73b4ee3468e9e32a811ae165, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -3.21
+      value: -2.99
       objectReference: {fileID: 0}
     - target: {fileID: 804303166396452573, guid: 42d76bfa73b4ee3468e9e32a811ae165, type: 3}
       propertyPath: m_LocalPosition.y
@@ -8362,9 +8434,21 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 158675353}
     - target: {fileID: 804303166396452570, guid: 42d76bfa73b4ee3468e9e32a811ae165, type: 3}
+      propertyPath: maxValue
+      value: 0.75
+      objectReference: {fileID: 0}
+    - target: {fileID: 804303166396452570, guid: 42d76bfa73b4ee3468e9e32a811ae165, type: 3}
+      propertyPath: minValue
+      value: -0.75
+      objectReference: {fileID: 0}
+    - target: {fileID: 804303166396452570, guid: 42d76bfa73b4ee3468e9e32a811ae165, type: 3}
       propertyPath: gameObjToCreate
       value: 
       objectReference: {fileID: 8268555052368567606, guid: 94a75348081e432419fd0b222f230b04, type: 3}
+    - target: {fileID: 804303166396452570, guid: 42d76bfa73b4ee3468e9e32a811ae165, type: 3}
+      propertyPath: RandomnessJitter.z
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 804303166396452571, guid: 42d76bfa73b4ee3468e9e32a811ae165, type: 3}
       propertyPath: m_Name
       value: Spawner 4 (1)
@@ -8375,7 +8459,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 804303166396452573, guid: 42d76bfa73b4ee3468e9e32a811ae165, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -4.83
+      value: -4.714
       objectReference: {fileID: 0}
     - target: {fileID: 804303166396452573, guid: 42d76bfa73b4ee3468e9e32a811ae165, type: 3}
       propertyPath: m_LocalPosition.y
@@ -8383,7 +8467,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 804303166396452573, guid: 42d76bfa73b4ee3468e9e32a811ae165, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 3.01
+      value: 3.071
       objectReference: {fileID: 0}
     - target: {fileID: 804303166396452573, guid: 42d76bfa73b4ee3468e9e32a811ae165, type: 3}
       propertyPath: m_LocalRotation.w
@@ -8522,6 +8606,14 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 158675353}
     - target: {fileID: 804303166396452570, guid: 42d76bfa73b4ee3468e9e32a811ae165, type: 3}
+      propertyPath: maxValue
+      value: 0.2
+      objectReference: {fileID: 0}
+    - target: {fileID: 804303166396452570, guid: 42d76bfa73b4ee3468e9e32a811ae165, type: 3}
+      propertyPath: minValue
+      value: -0.2
+      objectReference: {fileID: 0}
+    - target: {fileID: 804303166396452570, guid: 42d76bfa73b4ee3468e9e32a811ae165, type: 3}
       propertyPath: gameObjToCreate
       value: 
       objectReference: {fileID: 8268555052368567606, guid: 94a75348081e432419fd0b222f230b04, type: 3}
@@ -8535,7 +8627,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 804303166396452573, guid: 42d76bfa73b4ee3468e9e32a811ae165, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -10.106
+      value: -9.353
       objectReference: {fileID: 0}
     - target: {fileID: 804303166396452573, guid: 42d76bfa73b4ee3468e9e32a811ae165, type: 3}
       propertyPath: m_LocalPosition.y
@@ -8543,7 +8635,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 804303166396452573, guid: 42d76bfa73b4ee3468e9e32a811ae165, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 3.01
+      value: 3.244
       objectReference: {fileID: 0}
     - target: {fileID: 804303166396452573, guid: 42d76bfa73b4ee3468e9e32a811ae165, type: 3}
       propertyPath: m_LocalRotation.w
@@ -10766,7 +10858,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 804303166396452573, guid: 42d76bfa73b4ee3468e9e32a811ae165, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -14.627
+      value: -14.77
       objectReference: {fileID: 0}
     - target: {fileID: 804303166396452573, guid: 42d76bfa73b4ee3468e9e32a811ae165, type: 3}
       propertyPath: m_LocalPosition.y
@@ -10774,7 +10866,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 804303166396452573, guid: 42d76bfa73b4ee3468e9e32a811ae165, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 3.384
+      value: 3.23
       objectReference: {fileID: 0}
     - target: {fileID: 804303166396452573, guid: 42d76bfa73b4ee3468e9e32a811ae165, type: 3}
       propertyPath: m_LocalRotation.w
@@ -11103,9 +11195,21 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 158675353}
     - target: {fileID: 804303166396452570, guid: 42d76bfa73b4ee3468e9e32a811ae165, type: 3}
+      propertyPath: maxValue
+      value: 0.7
+      objectReference: {fileID: 0}
+    - target: {fileID: 804303166396452570, guid: 42d76bfa73b4ee3468e9e32a811ae165, type: 3}
+      propertyPath: minValue
+      value: -0.7
+      objectReference: {fileID: 0}
+    - target: {fileID: 804303166396452570, guid: 42d76bfa73b4ee3468e9e32a811ae165, type: 3}
       propertyPath: gameObjToCreate
       value: 
       objectReference: {fileID: 8268555052368567606, guid: 94a75348081e432419fd0b222f230b04, type: 3}
+    - target: {fileID: 804303166396452570, guid: 42d76bfa73b4ee3468e9e32a811ae165, type: 3}
+      propertyPath: RandomnessJitter.x
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 804303166396452571, guid: 42d76bfa73b4ee3468e9e32a811ae165, type: 3}
       propertyPath: m_Name
       value: Spawner 4 (2)
@@ -11116,7 +11220,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 804303166396452573, guid: 42d76bfa73b4ee3468e9e32a811ae165, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -8.939
+      value: -9.592
       objectReference: {fileID: 0}
     - target: {fileID: 804303166396452573, guid: 42d76bfa73b4ee3468e9e32a811ae165, type: 3}
       propertyPath: m_LocalPosition.y
@@ -11904,9 +12008,21 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 158675353}
     - target: {fileID: 804303166396452570, guid: 42d76bfa73b4ee3468e9e32a811ae165, type: 3}
+      propertyPath: maxValue
+      value: 0.45
+      objectReference: {fileID: 0}
+    - target: {fileID: 804303166396452570, guid: 42d76bfa73b4ee3468e9e32a811ae165, type: 3}
+      propertyPath: minValue
+      value: -0.45
+      objectReference: {fileID: 0}
+    - target: {fileID: 804303166396452570, guid: 42d76bfa73b4ee3468e9e32a811ae165, type: 3}
       propertyPath: gameObjToCreate
       value: 
       objectReference: {fileID: 8268555052368567606, guid: 15e1732641e645947a94d588842642d3, type: 3}
+    - target: {fileID: 804303166396452570, guid: 42d76bfa73b4ee3468e9e32a811ae165, type: 3}
+      propertyPath: RandomnessJitter.x
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 804303166396452571, guid: 42d76bfa73b4ee3468e9e32a811ae165, type: 3}
       propertyPath: m_Name
       value: Spawner 1 (1)
@@ -11917,7 +12033,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 804303166396452573, guid: 42d76bfa73b4ee3468e9e32a811ae165, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -3.58
+      value: -3.934
       objectReference: {fileID: 0}
     - target: {fileID: 804303166396452573, guid: 42d76bfa73b4ee3468e9e32a811ae165, type: 3}
       propertyPath: m_LocalPosition.y
@@ -11925,7 +12041,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 804303166396452573, guid: 42d76bfa73b4ee3468e9e32a811ae165, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -5.17
+      value: -5.384
       objectReference: {fileID: 0}
     - target: {fileID: 804303166396452573, guid: 42d76bfa73b4ee3468e9e32a811ae165, type: 3}
       propertyPath: m_LocalRotation.w
@@ -12628,6 +12744,14 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 158675353}
     - target: {fileID: 804303166396452570, guid: 42d76bfa73b4ee3468e9e32a811ae165, type: 3}
+      propertyPath: maxValue
+      value: 0.22
+      objectReference: {fileID: 0}
+    - target: {fileID: 804303166396452570, guid: 42d76bfa73b4ee3468e9e32a811ae165, type: 3}
+      propertyPath: minValue
+      value: -0.22
+      objectReference: {fileID: 0}
+    - target: {fileID: 804303166396452570, guid: 42d76bfa73b4ee3468e9e32a811ae165, type: 3}
       propertyPath: gameObjToCreate
       value: 
       objectReference: {fileID: 8268555052368567606, guid: 325284556ab5a2544bd493cfe1f755bd, type: 3}
@@ -12641,7 +12765,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 804303166396452573, guid: 42d76bfa73b4ee3468e9e32a811ae165, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -4.55
+      value: -4.548
       objectReference: {fileID: 0}
     - target: {fileID: 804303166396452573, guid: 42d76bfa73b4ee3468e9e32a811ae165, type: 3}
       propertyPath: m_LocalPosition.y
@@ -12649,7 +12773,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 804303166396452573, guid: 42d76bfa73b4ee3468e9e32a811ae165, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -2.11
+      value: -2.233
       objectReference: {fileID: 0}
     - target: {fileID: 804303166396452573, guid: 42d76bfa73b4ee3468e9e32a811ae165, type: 3}
       propertyPath: m_LocalRotation.w
@@ -14381,9 +14505,21 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 158675353}
     - target: {fileID: 804303166396452570, guid: 42d76bfa73b4ee3468e9e32a811ae165, type: 3}
+      propertyPath: maxValue
+      value: 0.6
+      objectReference: {fileID: 0}
+    - target: {fileID: 804303166396452570, guid: 42d76bfa73b4ee3468e9e32a811ae165, type: 3}
+      propertyPath: minValue
+      value: -0.6
+      objectReference: {fileID: 0}
+    - target: {fileID: 804303166396452570, guid: 42d76bfa73b4ee3468e9e32a811ae165, type: 3}
       propertyPath: gameObjToCreate
       value: 
       objectReference: {fileID: 8268555052368567606, guid: 325284556ab5a2544bd493cfe1f755bd, type: 3}
+    - target: {fileID: 804303166396452570, guid: 42d76bfa73b4ee3468e9e32a811ae165, type: 3}
+      propertyPath: RandomnessJitter.z
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 804303166396452571, guid: 42d76bfa73b4ee3468e9e32a811ae165, type: 3}
       propertyPath: m_Name
       value: Spawner 3 (1)
@@ -14394,7 +14530,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 804303166396452573, guid: 42d76bfa73b4ee3468e9e32a811ae165, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -4.34
+      value: -4.548
       objectReference: {fileID: 0}
     - target: {fileID: 804303166396452573, guid: 42d76bfa73b4ee3468e9e32a811ae165, type: 3}
       propertyPath: m_LocalPosition.y
@@ -14402,7 +14538,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 804303166396452573, guid: 42d76bfa73b4ee3468e9e32a811ae165, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -3.043
+      value: -2.442
       objectReference: {fileID: 0}
     - target: {fileID: 804303166396452573, guid: 42d76bfa73b4ee3468e9e32a811ae165, type: 3}
       propertyPath: m_LocalRotation.w
@@ -16120,6 +16256,14 @@ PrefabInstance:
       propertyPath: healthBar
       value: 
       objectReference: {fileID: 1318926005}
+    - target: {fileID: 6864157745169071772, guid: 6fd494b6f2de14aeca8770b438214e24, type: 3}
+      propertyPath: maxhealth
+      value: 100000
+      objectReference: {fileID: 0}
+    - target: {fileID: 6864157745169071772, guid: 6fd494b6f2de14aeca8770b438214e24, type: 3}
+      propertyPath: currenthealth
+      value: 100000
+      objectReference: {fileID: 0}
     - target: {fileID: 7243810167920990536, guid: 6fd494b6f2de14aeca8770b438214e24, type: 3}
       propertyPath: firePointUp
       value: 

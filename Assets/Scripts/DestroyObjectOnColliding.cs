@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using UnityEngine.Analytics;
 
 public class DestroyObjectOnColliding : MonoBehaviour
 {
@@ -31,6 +32,17 @@ public class DestroyObjectOnColliding : MonoBehaviour
 
         else if (collision.collider.tag == "Player")
         {
+            /*string activeSceneName = SceneManager.GetActiveScene().name;
+            AnalyticsResult analyticsResult = Analytics.CustomEvent(
+                "Death_By_Fall",
+                new Dictionary<string, object>
+                {
+                    { "Level", activeSceneName}
+                }
+            );
+            Debug.Log("analyticsResults Death_By_Fall -> " + analyticsResult);
+            Debug.Log("analyticsResults Death_By_Fall -> " + activeSceneName);*/
+            
             SceneManager.LoadScene(SceneManager.GetActiveScene().name);
         }
         

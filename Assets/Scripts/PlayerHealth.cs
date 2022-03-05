@@ -2,6 +2,8 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
+using UnityEngine.SceneManagement;
+using UnityEngine.Analytics;
 
 
 public class PlayerHealth : MonoBehaviour
@@ -73,9 +75,31 @@ public class PlayerHealth : MonoBehaviour
         {
             collided = true;
             enemyMass = collision.rigidbody.mass;
+            string activeSceneName = SceneManager.GetActiveScene().name;
+            AnalyticsResult analyticsResult = Analytics.CustomEvent(
+                "Enemy_collided",
+                new Dictionary<string, object>
+                {
+                    { "Level", activeSceneName},
+                    { "Enemy_type", collision.gameObject.name}
+                }
+            );
+            Debug.Log("analyticsResults Enemy_collided -> " + analyticsResult);
+            Debug.Log("analyticsResults Enemy_collided -> " + activeSceneName);
+            Debug.Log("analyticsResults Enemy_collided -> " + collision.gameObject.name);
         }
         if (collision.gameObject.CompareTag("Reward"))
         {
+            string activeSceneName = SceneManager.GetActiveScene().name;
+            AnalyticsResult analyticsResult = Analytics.CustomEvent(
+                "Reward_collection",
+                new Dictionary<string, object>
+                {
+                    { "Level", activeSceneName}
+                }
+            );
+            Debug.Log("analyticsResults Reward_collection -> " + analyticsResult);
+            Debug.Log("analyticsResults Reward_collection -> " + activeSceneName);
             collision.gameObject.SetActive(false);
             HealHealth(healFactor);
             count = count + 1;

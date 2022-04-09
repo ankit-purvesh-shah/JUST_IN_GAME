@@ -1961,7 +1961,7 @@ Transform:
   m_LocalScale: {x: 13.938413, y: 0.12940414, z: 8.599154}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 38
+  m_RootOrder: 37
   m_LocalEulerAnglesHint: {x: 0.431, y: -1.025, z: 0.405}
 --- !u!1001 &280203948
 PrefabInstance:
@@ -1976,11 +1976,15 @@ PrefabInstance:
       objectReference: {fileID: 158675353}
     - target: {fileID: 804303166396452570, guid: 42d76bfa73b4ee3468e9e32a811ae165, type: 3}
       propertyPath: maxValue
-      value: 0.75
+      value: 0.4
       objectReference: {fileID: 0}
     - target: {fileID: 804303166396452570, guid: 42d76bfa73b4ee3468e9e32a811ae165, type: 3}
       propertyPath: minValue
       value: -0.75
+      objectReference: {fileID: 0}
+    - target: {fileID: 804303166396452570, guid: 42d76bfa73b4ee3468e9e32a811ae165, type: 3}
+      propertyPath: enemyCount
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 804303166396452570, guid: 42d76bfa73b4ee3468e9e32a811ae165, type: 3}
       propertyPath: gameObjToCreate
@@ -2000,11 +2004,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 804303166396452573, guid: 42d76bfa73b4ee3468e9e32a811ae165, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -11.305
+      value: -11.55
       objectReference: {fileID: 0}
     - target: {fileID: 804303166396452573, guid: 42d76bfa73b4ee3468e9e32a811ae165, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.491
+      value: 0.5
       objectReference: {fileID: 0}
     - target: {fileID: 804303166396452573, guid: 42d76bfa73b4ee3468e9e32a811ae165, type: 3}
       propertyPath: m_LocalPosition.z
@@ -2699,6 +2703,10 @@ PrefabInstance:
       value: -0.8
       objectReference: {fileID: 0}
     - target: {fileID: 804303166396452570, guid: 42d76bfa73b4ee3468e9e32a811ae165, type: 3}
+      propertyPath: fTimeIntervals
+      value: 1.25
+      objectReference: {fileID: 0}
+    - target: {fileID: 804303166396452570, guid: 42d76bfa73b4ee3468e9e32a811ae165, type: 3}
       propertyPath: RandomnessJitter.z
       value: 1
       objectReference: {fileID: 0}
@@ -2860,7 +2868,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3762418645957916934, guid: 7aeb0644522a04fa991d0b8c116892f1, type: 3}
       propertyPath: m_RootOrder
-      value: 31
+      value: 30
       objectReference: {fileID: 0}
     - target: {fileID: 3762418645957916934, guid: 7aeb0644522a04fa991d0b8c116892f1, type: 3}
       propertyPath: m_LocalScale.x
@@ -4102,7 +4110,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3762418645957916934, guid: 7aeb0644522a04fa991d0b8c116892f1, type: 3}
       propertyPath: m_RootOrder
-      value: 35
+      value: 34
       objectReference: {fileID: 0}
     - target: {fileID: 3762418645957916934, guid: 7aeb0644522a04fa991d0b8c116892f1, type: 3}
       propertyPath: m_LocalScale.x
@@ -5189,6 +5197,14 @@ PrefabInstance:
       value: -0.5
       objectReference: {fileID: 0}
     - target: {fileID: 804303166396452570, guid: 42d76bfa73b4ee3468e9e32a811ae165, type: 3}
+      propertyPath: enemyCount
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 804303166396452570, guid: 42d76bfa73b4ee3468e9e32a811ae165, type: 3}
+      propertyPath: fTimeIntervals
+      value: 1.25
+      objectReference: {fileID: 0}
+    - target: {fileID: 804303166396452570, guid: 42d76bfa73b4ee3468e9e32a811ae165, type: 3}
       propertyPath: gameObjToCreate
       value: 
       objectReference: {fileID: 8268555052368567606, guid: 94a75348081e432419fd0b222f230b04, type: 3}
@@ -5357,6 +5373,14 @@ PrefabInstance:
     - target: {fileID: 804303166396452570, guid: 42d76bfa73b4ee3468e9e32a811ae165, type: 3}
       propertyPath: minValue
       value: -0.4
+      objectReference: {fileID: 0}
+    - target: {fileID: 804303166396452570, guid: 42d76bfa73b4ee3468e9e32a811ae165, type: 3}
+      propertyPath: enemyCount
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 804303166396452570, guid: 42d76bfa73b4ee3468e9e32a811ae165, type: 3}
+      propertyPath: fTimeIntervals
+      value: 1.25
       objectReference: {fileID: 0}
     - target: {fileID: 804303166396452570, guid: 42d76bfa73b4ee3468e9e32a811ae165, type: 3}
       propertyPath: gameObjToCreate
@@ -5714,6 +5738,14 @@ PrefabInstance:
       propertyPath: player
       value: 
       objectReference: {fileID: 158675353}
+    - target: {fileID: 804303166396452570, guid: 42d76bfa73b4ee3468e9e32a811ae165, type: 3}
+      propertyPath: enemyCount
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 804303166396452570, guid: 42d76bfa73b4ee3468e9e32a811ae165, type: 3}
+      propertyPath: fTimeIntervals
+      value: 1.25
+      objectReference: {fileID: 0}
     - target: {fileID: 804303166396452570, guid: 42d76bfa73b4ee3468e9e32a811ae165, type: 3}
       propertyPath: gameObjToCreate
       value: 
@@ -6565,7 +6597,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3762418645957916934, guid: 7aeb0644522a04fa991d0b8c116892f1, type: 3}
       propertyPath: m_RootOrder
-      value: 34
+      value: 33
       objectReference: {fileID: 0}
     - target: {fileID: 3762418645957916934, guid: 7aeb0644522a04fa991d0b8c116892f1, type: 3}
       propertyPath: m_LocalScale.x
@@ -6667,7 +6699,7 @@ Transform:
   - {fileID: 1750951966}
   - {fileID: 1523530954}
   m_Father: {fileID: 0}
-  m_RootOrder: 36
+  m_RootOrder: 35
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &842945447
 GameObject:
@@ -8130,6 +8162,14 @@ PrefabInstance:
       value: -0.2
       objectReference: {fileID: 0}
     - target: {fileID: 804303166396452570, guid: 42d76bfa73b4ee3468e9e32a811ae165, type: 3}
+      propertyPath: enemyCount
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 804303166396452570, guid: 42d76bfa73b4ee3468e9e32a811ae165, type: 3}
+      propertyPath: fTimeIntervals
+      value: 1.25
+      objectReference: {fileID: 0}
+    - target: {fileID: 804303166396452570, guid: 42d76bfa73b4ee3468e9e32a811ae165, type: 3}
       propertyPath: gameObjToCreate
       value: 
       objectReference: {fileID: 8268555052368567606, guid: 15e1732641e645947a94d588842642d3, type: 3}
@@ -8492,6 +8532,10 @@ PrefabInstance:
       value: -0.65
       objectReference: {fileID: 0}
     - target: {fileID: 804303166396452570, guid: 42d76bfa73b4ee3468e9e32a811ae165, type: 3}
+      propertyPath: fTimeIntervals
+      value: 1.25
+      objectReference: {fileID: 0}
+    - target: {fileID: 804303166396452570, guid: 42d76bfa73b4ee3468e9e32a811ae165, type: 3}
       propertyPath: RandomnessJitter.x
       value: 1
       objectReference: {fileID: 0}
@@ -8700,6 +8744,14 @@ PrefabInstance:
       value: -0.75
       objectReference: {fileID: 0}
     - target: {fileID: 804303166396452570, guid: 42d76bfa73b4ee3468e9e32a811ae165, type: 3}
+      propertyPath: enemyCount
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 804303166396452570, guid: 42d76bfa73b4ee3468e9e32a811ae165, type: 3}
+      propertyPath: fTimeIntervals
+      value: 1.25
+      objectReference: {fileID: 0}
+    - target: {fileID: 804303166396452570, guid: 42d76bfa73b4ee3468e9e32a811ae165, type: 3}
       propertyPath: gameObjToCreate
       value: 
       objectReference: {fileID: 8268555052368567606, guid: 94a75348081e432419fd0b222f230b04, type: 3}
@@ -8870,6 +8922,14 @@ PrefabInstance:
     - target: {fileID: 804303166396452570, guid: 42d76bfa73b4ee3468e9e32a811ae165, type: 3}
       propertyPath: minValue
       value: -0.2
+      objectReference: {fileID: 0}
+    - target: {fileID: 804303166396452570, guid: 42d76bfa73b4ee3468e9e32a811ae165, type: 3}
+      propertyPath: enemyCount
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 804303166396452570, guid: 42d76bfa73b4ee3468e9e32a811ae165, type: 3}
+      propertyPath: fTimeIntervals
+      value: 1.25
       objectReference: {fileID: 0}
     - target: {fileID: 804303166396452570, guid: 42d76bfa73b4ee3468e9e32a811ae165, type: 3}
       propertyPath: gameObjToCreate
@@ -10345,7 +10405,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3762418645957916934, guid: 7aeb0644522a04fa991d0b8c116892f1, type: 3}
       propertyPath: m_RootOrder
-      value: 33
+      value: 32
       objectReference: {fileID: 0}
     - target: {fileID: 3762418645957916934, guid: 7aeb0644522a04fa991d0b8c116892f1, type: 3}
       propertyPath: m_LocalScale.x
@@ -11218,71 +11278,6 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1468673916}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
---- !u!1001 &1477233732
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    m_TransformParent: {fileID: 0}
-    m_Modifications:
-    - target: {fileID: 804303166396452570, guid: 42d76bfa73b4ee3468e9e32a811ae165, type: 3}
-      propertyPath: player
-      value: 
-      objectReference: {fileID: 158675353}
-    - target: {fileID: 804303166396452570, guid: 42d76bfa73b4ee3468e9e32a811ae165, type: 3}
-      propertyPath: gameObjToCreate
-      value: 
-      objectReference: {fileID: 8268555052368567606, guid: 94a75348081e432419fd0b222f230b04, type: 3}
-    - target: {fileID: 804303166396452571, guid: 42d76bfa73b4ee3468e9e32a811ae165, type: 3}
-      propertyPath: m_Name
-      value: Spawner 4 (7)
-      objectReference: {fileID: 0}
-    - target: {fileID: 804303166396452573, guid: 42d76bfa73b4ee3468e9e32a811ae165, type: 3}
-      propertyPath: m_RootOrder
-      value: 29
-      objectReference: {fileID: 0}
-    - target: {fileID: 804303166396452573, guid: 42d76bfa73b4ee3468e9e32a811ae165, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: -12.745
-      objectReference: {fileID: 0}
-    - target: {fileID: 804303166396452573, guid: 42d76bfa73b4ee3468e9e32a811ae165, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: -0.381
-      objectReference: {fileID: 0}
-    - target: {fileID: 804303166396452573, guid: 42d76bfa73b4ee3468e9e32a811ae165, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 3.384
-      objectReference: {fileID: 0}
-    - target: {fileID: 804303166396452573, guid: 42d76bfa73b4ee3468e9e32a811ae165, type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 804303166396452573, guid: 42d76bfa73b4ee3468e9e32a811ae165, type: 3}
-      propertyPath: m_LocalRotation.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 804303166396452573, guid: 42d76bfa73b4ee3468e9e32a811ae165, type: 3}
-      propertyPath: m_LocalRotation.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 804303166396452573, guid: 42d76bfa73b4ee3468e9e32a811ae165, type: 3}
-      propertyPath: m_LocalRotation.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 804303166396452573, guid: 42d76bfa73b4ee3468e9e32a811ae165, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 804303166396452573, guid: 42d76bfa73b4ee3468e9e32a811ae165, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 804303166396452573, guid: 42d76bfa73b4ee3468e9e32a811ae165, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: 42d76bfa73b4ee3468e9e32a811ae165, type: 3}
 --- !u!1001 &1491548495
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -11295,6 +11290,14 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 158675353}
     - target: {fileID: 804303166396452570, guid: 42d76bfa73b4ee3468e9e32a811ae165, type: 3}
+      propertyPath: enemyCount
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 804303166396452570, guid: 42d76bfa73b4ee3468e9e32a811ae165, type: 3}
+      propertyPath: fTimeIntervals
+      value: 1.25
+      objectReference: {fileID: 0}
+    - target: {fileID: 804303166396452570, guid: 42d76bfa73b4ee3468e9e32a811ae165, type: 3}
       propertyPath: gameObjToCreate
       value: 
       objectReference: {fileID: 8268555052368567606, guid: 94a75348081e432419fd0b222f230b04, type: 3}
@@ -11304,7 +11307,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 804303166396452573, guid: 42d76bfa73b4ee3468e9e32a811ae165, type: 3}
       propertyPath: m_RootOrder
-      value: 30
+      value: 29
       objectReference: {fileID: 0}
     - target: {fileID: 804303166396452573, guid: 42d76bfa73b4ee3468e9e32a811ae165, type: 3}
       propertyPath: m_LocalPosition.x
@@ -11646,11 +11649,15 @@ PrefabInstance:
       objectReference: {fileID: 158675353}
     - target: {fileID: 804303166396452570, guid: 42d76bfa73b4ee3468e9e32a811ae165, type: 3}
       propertyPath: maxValue
-      value: 0.7
+      value: 0.3
       objectReference: {fileID: 0}
     - target: {fileID: 804303166396452570, guid: 42d76bfa73b4ee3468e9e32a811ae165, type: 3}
       propertyPath: minValue
-      value: -0.7
+      value: -1.1
+      objectReference: {fileID: 0}
+    - target: {fileID: 804303166396452570, guid: 42d76bfa73b4ee3468e9e32a811ae165, type: 3}
+      propertyPath: enemyCount
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 804303166396452570, guid: 42d76bfa73b4ee3468e9e32a811ae165, type: 3}
       propertyPath: gameObjToCreate
@@ -11670,7 +11677,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 804303166396452573, guid: 42d76bfa73b4ee3468e9e32a811ae165, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -9.592
+      value: -10.04
       objectReference: {fileID: 0}
     - target: {fileID: 804303166396452573, guid: 42d76bfa73b4ee3468e9e32a811ae165, type: 3}
       propertyPath: m_LocalPosition.y
@@ -11819,7 +11826,7 @@ Transform:
   m_LocalScale: {x: 13.938413, y: 0.12940414, z: 8.599154}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 37
+  m_RootOrder: 36
   m_LocalEulerAnglesHint: {x: 0.431, y: -1.025, z: 0.405}
 --- !u!1 &1523530953
 GameObject:
@@ -12528,6 +12535,14 @@ PrefabInstance:
       value: -0.45
       objectReference: {fileID: 0}
     - target: {fileID: 804303166396452570, guid: 42d76bfa73b4ee3468e9e32a811ae165, type: 3}
+      propertyPath: enemyCount
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 804303166396452570, guid: 42d76bfa73b4ee3468e9e32a811ae165, type: 3}
+      propertyPath: fTimeIntervals
+      value: 1.25
+      objectReference: {fileID: 0}
+    - target: {fileID: 804303166396452570, guid: 42d76bfa73b4ee3468e9e32a811ae165, type: 3}
       propertyPath: gameObjToCreate
       value: 
       objectReference: {fileID: 8268555052368567606, guid: 15e1732641e645947a94d588842642d3, type: 3}
@@ -12545,7 +12560,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 804303166396452573, guid: 42d76bfa73b4ee3468e9e32a811ae165, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -3.934
+      value: -3.768
       objectReference: {fileID: 0}
     - target: {fileID: 804303166396452573, guid: 42d76bfa73b4ee3468e9e32a811ae165, type: 3}
       propertyPath: m_LocalPosition.y
@@ -13093,7 +13108,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3762418645957916934, guid: 7aeb0644522a04fa991d0b8c116892f1, type: 3}
       propertyPath: m_RootOrder
-      value: 32
+      value: 31
       objectReference: {fileID: 0}
     - target: {fileID: 3762418645957916934, guid: 7aeb0644522a04fa991d0b8c116892f1, type: 3}
       propertyPath: m_LocalScale.x
@@ -13262,6 +13277,14 @@ PrefabInstance:
     - target: {fileID: 804303166396452570, guid: 42d76bfa73b4ee3468e9e32a811ae165, type: 3}
       propertyPath: minValue
       value: -0.22
+      objectReference: {fileID: 0}
+    - target: {fileID: 804303166396452570, guid: 42d76bfa73b4ee3468e9e32a811ae165, type: 3}
+      propertyPath: enemyCount
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 804303166396452570, guid: 42d76bfa73b4ee3468e9e32a811ae165, type: 3}
+      propertyPath: fTimeIntervals
+      value: 1.25
       objectReference: {fileID: 0}
     - target: {fileID: 804303166396452570, guid: 42d76bfa73b4ee3468e9e32a811ae165, type: 3}
       propertyPath: gameObjToCreate
@@ -14509,7 +14532,7 @@ Transform:
   - {fileID: 2040845134}
   - {fileID: 1174459159}
   m_Father: {fileID: 0}
-  m_RootOrder: 39
+  m_RootOrder: 38
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1864415783
 GameObject:
@@ -15127,6 +15150,14 @@ PrefabInstance:
       value: -0.6
       objectReference: {fileID: 0}
     - target: {fileID: 804303166396452570, guid: 42d76bfa73b4ee3468e9e32a811ae165, type: 3}
+      propertyPath: enemyCount
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 804303166396452570, guid: 42d76bfa73b4ee3468e9e32a811ae165, type: 3}
+      propertyPath: fTimeIntervals
+      value: 1.25
+      objectReference: {fileID: 0}
+    - target: {fileID: 804303166396452570, guid: 42d76bfa73b4ee3468e9e32a811ae165, type: 3}
       propertyPath: gameObjToCreate
       value: 
       objectReference: {fileID: 8268555052368567606, guid: 325284556ab5a2544bd493cfe1f755bd, type: 3}
@@ -15152,7 +15183,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 804303166396452573, guid: 42d76bfa73b4ee3468e9e32a811ae165, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -2.442
+      value: -2.848
       objectReference: {fileID: 0}
     - target: {fileID: 804303166396452573, guid: 42d76bfa73b4ee3468e9e32a811ae165, type: 3}
       propertyPath: m_LocalRotation.w

@@ -127,7 +127,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   rigidBody: {fileID: 0}
-  fSpeed: 1.5
+  fSpeed: 4.2
   followObjectTag: Player
 --- !u!114 &8966949442159724403
 MonoBehaviour:

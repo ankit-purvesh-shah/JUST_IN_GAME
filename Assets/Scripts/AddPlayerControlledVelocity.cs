@@ -39,8 +39,18 @@ public class AddPlayerControlledVelocity : MonoBehaviour
     private void Update()
     {
         PlayerJump();
+        Vector3 velocity = myBody.velocity;
+        if (onPlatform)
+        {
+            myBody.velocity = velocity;
+        }
+        else
+        {
+            myBody.velocity = velocity / 1.0020f;
+        }
     }
-    void PlayerMove() {
+    void PlayerMove()
+    {
 
         if (Input.GetKey(keyPositive))
         {
@@ -61,9 +71,10 @@ public class AddPlayerControlledVelocity : MonoBehaviour
         if (Input.GetButtonDown("Jump") && onPlatform)
         {
             Vector3 velocity = myBody.velocity;
-            velocity.y = jumpForce ;
+            velocity.y = jumpForce;
             myBody.velocity = velocity * 0.3f;
             //myBody.AddForce(new Vector3(0f, jumpForce), ForceMode.Impulse);
+            //myBody.AddForce(Vector3.up * jumpForce, ForceMode.Acceleration);
             onPlatform = false;
         }
     }
@@ -80,7 +91,7 @@ public class AddPlayerControlledVelocity : MonoBehaviour
     }
 
 
-   
+
 }
 
 

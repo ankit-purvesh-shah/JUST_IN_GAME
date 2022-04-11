@@ -12,7 +12,7 @@ public class PlayerHealth : MonoBehaviour
     //[SerializeField]
     float multiplicationFactor = 3;
 
-    public float maxhealth = 1000;
+    public readonly float maxhealth = 1000;
     public float currenthealth;
     public HealthBarScript healthBar;
 
@@ -30,8 +30,8 @@ public class PlayerHealth : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        currenthealth = maxhealth;
-        healthBar.SetMaxHealth(maxhealth);
+        this.currenthealth = this.maxhealth;
+        healthBar.SetMaxHealth(this.maxhealth);
         count = 0;
         SetCountText();
     }
@@ -43,17 +43,19 @@ public class PlayerHealth : MonoBehaviour
 
     void TakeDamage(float damage)
     {
-        currenthealth -= damage;
-        healthBar.SetHealth(currenthealth);
+        this.currenthealth -= damage;
+        healthBar.SetHealth(this.currenthealth);
+        Debug.Log("Taking Damage: "+this.currenthealth);
     }
 
 
     void HealHealth(float healXP)
     {
-        Debug.Log(currenthealth);
-        currenthealth += healXP;
-        Debug.Log(currenthealth);
-        healthBar.SetHealth(currenthealth);
+        Debug.Log(this.currenthealth);
+        this.currenthealth = Mathf.Min(this.currenthealth + healXP,this.maxhealth);
+        Debug.Log("Reward Picked up. Current Health: "+ this.currenthealth);
+        
+        healthBar.SetHealth(this.currenthealth);
     }
 
     // Update is called once per frame

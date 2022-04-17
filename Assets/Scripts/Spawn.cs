@@ -86,11 +86,11 @@ public class Spawn : MonoBehaviour
                 GameObject portal1 =  Instantiate(portalGameObject, v3SpawnPos + newEnemy1, Quaternion.identity);
                 portal1.transform.rotation = Quaternion.Euler(90, 0, 0);
                 //portalGameObject.Transform.Rotation();
-                StartCoroutine(AddDelay(0.1f));
+                StartCoroutine(AddDelay(0.6f));
                 Instantiate(gameObjToCreate, v3SpawnPos + newEnemy1, Quaternion.identity);
                 GameObject portal2 = Instantiate(portalGameObject, v3SpawnPos + newEnemy1, Quaternion.identity);
                 portal2.transform.rotation = Quaternion.Euler(90, 0, 0);
-                StartCoroutine(AddDelay(0.1f));
+                StartCoroutine(AddDelay(0.6f));
                 Instantiate(gameObjToCreate, v3SpawnPos + newEnemy2, Quaternion.identity);
                 enemyCount -= 2;
                 Debug.Log("Enemy created");

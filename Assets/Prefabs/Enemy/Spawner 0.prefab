@@ -43,8 +43,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7c2c0518154bc4b14b469c7002a5080b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  fTimeIntervals: 2
+  fTimeIntervals: 1.25
   gameObjToCreate: {fileID: 8268555052368567606, guid: 335926ececd2ab5409ce804658cbd042, type: 3}
+  portalGameObject: {fileID: 247800015353271211, guid: d351fa36c3e655b46b3300a943a4db03, type: 3}
+  minValue: -0.33
+  maxValue: 1.11
   v3SpawnPositionJitter: {x: 2, y: 0, z: 1.5}
+  RandomnessJitter: {x: 1, y: 0, z: 0}
   player: {fileID: 0}
   enemyCount: 10

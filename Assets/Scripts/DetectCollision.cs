@@ -3,13 +3,16 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.Analytics;
-
+using DG.Tweening;
 public class DetectCollision : MonoBehaviour
 {
-
+    // [SerializeField]
+    // private Texture[] textures;
+    public Texture d3;
+    
     [SerializeField]
     float multiplicationFactor =2;
-
+    public Material nmaterial;
     PlayerHealth playerHealth;
     GameObject playerObject;
 
@@ -68,7 +71,7 @@ public class DetectCollision : MonoBehaviour
 
         if (col.gameObject.name == "Disapperaring Cube")
         {
-            /*Debug.Log("Collision Detected");*/
+            Debug.Log("Collision Detected for disappearing");
             string activeSceneName = SceneManager.GetActiveScene().name;
             AnalyticsResult analyticsResult = Analytics.CustomEvent(
                 "Disappearing_tile_touched",
@@ -80,7 +83,20 @@ public class DetectCollision : MonoBehaviour
             Debug.Log("analyticsResults Disappearing_tile_touched -> " + analyticsResult);
             Debug.Log("analyticsResults Disappearing_tile_touched -> " + activeSceneName);
             col.gameObject.GetComponent<Renderer>().material.color = Color.red;
-            Destroy(col.gameObject, 2);
+            // col.gameObject.GetComponent<Renderer>().material.mainTexture = d3;
+            // // col.gameObject.GetComponent<Renderer>().material.color = Color.red;
+            // // StartCoroutine(changeColorYellow(col));
+            // // StartCoroutine(changeColorRed(col));
+            // //  col.gameObject.GetComponent<Renderer>().material.color = Color.yellow;
+            // Debug.Log("Colllllll");
+            // Debug.Log(col.gameObject.name);
+            // yield return new WaitForSeconds(1);
+            // Debug.Log("afrer");
+            // Debug.Log(col.gameObject.name);
+            // col.gameObject.GetComponent<Renderer>().material.color = Color.red;
+        
+            Destroy(col.gameObject, 3);
+
         }
 
         if (col.gameObject.tag == "Platform")
@@ -132,6 +148,19 @@ public class DetectCollision : MonoBehaviour
 
         }
     }
+
+    
+    // public IEnumerator changeColorRed(Collision col){
+    //     Debug.Log(col.gameObject.name);
+    //     if (col.gameObject.name == "Disapperaring Cube")
+    //     {
+    //         Debug.Log("Red");
+    //     yield return new WaitForSeconds(2);
+    //     col.gameObject.GetComponent<Renderer>().material.color = Color.red;
+    //     }
+
+       
+    // }
 
 
 

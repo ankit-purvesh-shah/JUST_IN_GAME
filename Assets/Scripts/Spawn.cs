@@ -12,6 +12,9 @@ public class Spawn : MonoBehaviour
     GameObject gameObjToCreate;
 
     [SerializeField]
+    GameObject portalGameObject;
+
+    [SerializeField]
     float minValue;
 
     [SerializeField]
@@ -79,7 +82,15 @@ public class Spawn : MonoBehaviour
                     res = UnityEngine.Random.Range(minValue, maxValue);
                     newEnemy2.z = res;
                 }
+                
+                GameObject portal1 =  Instantiate(portalGameObject, v3SpawnPos + newEnemy1, Quaternion.identity);
+                portal1.transform.rotation = Quaternion.Euler(90, 0, 0);
+                //portalGameObject.Transform.Rotation();
+                StartCoroutine(AddDelay(0.1f));
                 Instantiate(gameObjToCreate, v3SpawnPos + newEnemy1, Quaternion.identity);
+                GameObject portal2 = Instantiate(portalGameObject, v3SpawnPos + newEnemy1, Quaternion.identity);
+                portal2.transform.rotation = Quaternion.Euler(90, 0, 0);
+                StartCoroutine(AddDelay(0.1f));
                 Instantiate(gameObjToCreate, v3SpawnPos + newEnemy2, Quaternion.identity);
                 enemyCount -= 2;
                 Debug.Log("Enemy created");
@@ -87,5 +98,10 @@ public class Spawn : MonoBehaviour
             
 
         }
+    }
+    IEnumerator AddDelay(float time)
+    {
+        yield return new WaitForSeconds(time);
+        //Destroy(gameObject);
     }
 }

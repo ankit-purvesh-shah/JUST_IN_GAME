@@ -4,6 +4,7 @@ using UnityEngine;
 using TMPro;
 using UnityEngine.SceneManagement;
 using UnityEngine.Analytics;
+using UnityEngine.UI;
 
 
 public class PlayerHealth : MonoBehaviour
@@ -11,7 +12,8 @@ public class PlayerHealth : MonoBehaviour
 
     //[SerializeField]
     float multiplicationFactor = 3;
-
+    [SerializeField]
+    public Texture2D textureImage;
     public readonly float maxhealth = 1000;
     public float currenthealth;
     public HealthBarScript healthBar;
@@ -20,7 +22,7 @@ public class PlayerHealth : MonoBehaviour
     private float enemyMass = 0;
     PlayerHealth playerHealth;
     GameObject playerObject;
-
+    public GameObject TakingDamageScreen;
 
     // Rewards Health Heal
     private bool rewardsCollected = false;
@@ -43,6 +45,12 @@ public class PlayerHealth : MonoBehaviour
 
     void TakeDamage(float damage)
     {
+        TakingDamageScreen.GetComponent<Image>().rectTransform.sizeDelta = new Vector2(Screen.width,Screen.height);
+        //TakingDamageScreen.GetComponent<Image>().width = Screen.width;
+        var color = TakingDamageScreen.GetComponent<Image>().color;
+        color.a = 1f;
+        TakingDamageScreen.GetComponent<Image>().color = color;
+
         this.currenthealth -= damage;
         healthBar.SetHealth(this.currenthealth);
         Debug.Log("Taking Damage: "+this.currenthealth);
@@ -62,14 +70,28 @@ public class PlayerHealth : MonoBehaviour
     void Update()
     {
         
-        if (collided && enemyMass != 0)
-        {
-            
-            TakeDamage((multiplicationFactor * enemyMass));
-
-        }
+        
+       
     }
     
+
+    void OnCollisionStay(Collision collision)
+    {
+
+
+        //
+        if (collision.gameObject.tag == "Enemy")
+        {
+            
+            TakeDamage(multiplicationFactor * enemyMass);
+        }
+        if (TakingDamageScreen.GetComponent<Image>().color.a > 0)
+        {
+            var color = TakingDamageScreen.GetComponent<Image>().color;
+            color.a -= 0.05f;
+            TakingDamageScreen.GetComponent<Image>().color = color;
+        }
+    }
 
     private void OnCollisionEnter(Collision collision)
     {
@@ -77,6 +99,7 @@ public class PlayerHealth : MonoBehaviour
         {
             collided = true;
             enemyMass = collision.rigidbody.mass;
+            
             string activeSceneName = SceneManager.GetActiveScene().name;
             AnalyticsResult analyticsResult = Analytics.CustomEvent(
                 "Enemy_collided",
@@ -86,6 +109,7 @@ public class PlayerHealth : MonoBehaviour
                     { "Enemy_type", collision.gameObject.name}
                 }
             );
+            //GUI.DrawTexture(new Rect(0, 0, Screen.width, Screen.height), textureImage);
             Debug.Log("analyticsResults Enemy_collided -> " + analyticsResult);
             Debug.Log("analyticsResults Enemy_collided -> " + activeSceneName);
             Debug.Log("analyticsResults Enemy_collided -> " + collision.gameObject.name);

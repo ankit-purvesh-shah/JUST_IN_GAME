@@ -29,6 +29,7 @@ public class BulletControllerBack : MonoBehaviour
         if (other.gameObject.tag == "Enemy")
         {
             other.gameObject.GetComponent<EnemyHealthManager>().HurtEnemy(damageToGive);
+            Destroy(gameObject);
         }
     }
 

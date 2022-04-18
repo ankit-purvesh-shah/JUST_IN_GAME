@@ -83,6 +83,11 @@ public class DetectCollision : MonoBehaviour
             Debug.Log("analyticsResults Disappearing_tile_touched -> " + analyticsResult);
             Debug.Log("analyticsResults Disappearing_tile_touched -> " + activeSceneName);
             col.gameObject.GetComponent<Renderer>().material.color = Color.red;
+            Debug.Log(col.gameObject);
+
+            // col.gameObject.GetComponent<Animator>().SetBool("isCollided",true); 
+
+            
             // col.gameObject.GetComponent<Renderer>().material.mainTexture = d3;
             // // col.gameObject.GetComponent<Renderer>().material.color = Color.red;
             // // StartCoroutine(changeColorYellow(col));
@@ -94,7 +99,7 @@ public class DetectCollision : MonoBehaviour
             // Debug.Log("afrer");
             // Debug.Log(col.gameObject.name);
             // col.gameObject.GetComponent<Renderer>().material.color = Color.red;
-        
+
             Destroy(col.gameObject, 3);
 
         }

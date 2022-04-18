@@ -7,7 +7,8 @@ public class EnemyHealthManager : MonoBehaviour
 
     public int health;
     private int currentHealth;
-
+    [SerializeField]
+    GameObject EnemyDeathEffect;
     // Start is called before the first frame update
     void Start()
     {
@@ -26,5 +27,12 @@ public class EnemyHealthManager : MonoBehaviour
     public void HurtEnemy(int damage)
     {
         currentHealth -= damage;
+
+        GameObject enemyBlood = Instantiate(EnemyDeathEffect, transform.position, Quaternion.identity);
+        StartCoroutine(AddDelay(0.6f));
+    }
+    IEnumerator AddDelay(float time)
+    {
+        yield return new WaitForSeconds(time);
     }
 }

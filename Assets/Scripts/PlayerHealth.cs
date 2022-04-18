@@ -90,6 +90,27 @@ public class PlayerHealth : MonoBehaviour
             Debug.Log("analyticsResults Enemy_collided -> " + activeSceneName);
             Debug.Log("analyticsResults Enemy_collided -> " + collision.gameObject.name);
         }
+        /*if (collision.gameObject.CompareTag("Reward"))
+        {
+            string activeSceneName = SceneManager.GetActiveScene().name;
+            AnalyticsResult analyticsResult = Analytics.CustomEvent(
+                "Reward_collection",
+                new Dictionary<string, object>
+                {
+                    { "Level", activeSceneName}
+                }
+            );
+            Debug.Log("analyticsResults Reward_collection -> " + analyticsResult);
+            Debug.Log("analyticsResults Reward_collection -> " + activeSceneName);
+            collision.gameObject.SetActive(false);
+            HealHealth(healFactor);
+            count = count + 1;
+            SetCountText();
+        }*/
+    }
+
+    private void OnTriggerEnter(Collider collision)
+    {
         if (collision.gameObject.CompareTag("Reward"))
         {
             string activeSceneName = SceneManager.GetActiveScene().name;
@@ -108,6 +129,7 @@ public class PlayerHealth : MonoBehaviour
             SetCountText();
         }
     }
+
     void SetCountText()
     {
         countText.text = "Score: " + count.ToString();

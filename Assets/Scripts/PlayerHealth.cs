@@ -12,8 +12,8 @@ public class PlayerHealth : MonoBehaviour
 
     //[SerializeField]
     float multiplicationFactor = 3;
-    [SerializeField]
-    public Texture2D textureImage;
+    //[SerializeField]
+    //public Texture2D textureImage;
     public readonly float maxhealth = 1000;
     public float currenthealth;
     public HealthBarScript healthBar;
@@ -22,7 +22,7 @@ public class PlayerHealth : MonoBehaviour
     private float enemyMass = 0;
     PlayerHealth playerHealth;
     GameObject playerObject;
-    public GameObject TakingDamageScreen;
+    //public GameObject TakingDamageScreen;
 
     // Rewards Health Heal
     private bool rewardsCollected = false;
@@ -45,11 +45,11 @@ public class PlayerHealth : MonoBehaviour
 
     void TakeDamage(float damage)
     {
-        TakingDamageScreen.GetComponent<Image>().rectTransform.sizeDelta = new Vector2(Screen.width,Screen.height);
+       // TakingDamageScreen.GetComponent<Image>().rectTransform.sizeDelta = new Vector2(Screen.width,Screen.height);
         //TakingDamageScreen.GetComponent<Image>().width = Screen.width;
-        var color = TakingDamageScreen.GetComponent<Image>().color;
-        color.a = 1f;
-        TakingDamageScreen.GetComponent<Image>().color = color;
+       // var color = TakingDamageScreen.GetComponent<Image>().color;
+       // color.a = 1f;
+        //TakingDamageScreen.GetComponent<Image>().color = color;
 
         this.currenthealth -= damage;
         healthBar.SetHealth(this.currenthealth);
@@ -85,12 +85,12 @@ public class PlayerHealth : MonoBehaviour
             
             TakeDamage(multiplicationFactor * enemyMass);
         }
-        if (TakingDamageScreen.GetComponent<Image>().color.a > 0)
-        {
-            var color = TakingDamageScreen.GetComponent<Image>().color;
-            color.a -= 0.05f;
-            TakingDamageScreen.GetComponent<Image>().color = color;
-        }
+       // if (TakingDamageScreen.GetComponent<Image>().color.a > 0)
+      //  {
+      //      var color = TakingDamageScreen.GetComponent<Image>().color;
+      //      color.a -= 0.05f;
+     //       TakingDamageScreen.GetComponent<Image>().color = color;
+       // }
     }
 
     private void OnCollisionEnter(Collision collision)

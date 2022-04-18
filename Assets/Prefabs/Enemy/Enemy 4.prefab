@@ -142,3 +142,4 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   health: 2
+  EnemyDeathEffect: {fileID: 9213659477578365978, guid: c234562888e25a7429a5ee2427f7c022, type: 3}

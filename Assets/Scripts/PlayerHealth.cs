@@ -27,15 +27,13 @@ public class PlayerHealth : MonoBehaviour
     // Rewards Health Heal
     private bool rewardsCollected = false;
     private readonly float healFactor=150.0F;
-    public TextMeshProUGUI countText;
-    private int count;
+
     // Start is called before the first frame update
     void Start()
     {
         this.currenthealth = this.maxhealth;
         healthBar.SetMaxHealth(this.maxhealth);
-        count = 0;
-        SetCountText();
+
     }
     private void Awake()
     {
@@ -149,15 +147,10 @@ public class PlayerHealth : MonoBehaviour
             Debug.Log("analyticsResults Reward_collection -> " + activeSceneName);
             collision.gameObject.SetActive(false);
             HealHealth(healFactor);
-            count = count + 1;
-            SetCountText();
+
         }
     }
 
-    void SetCountText()
-    {
-        countText.text = "Score: " + count.ToString();
-    }
 
     private void OnCollisionExit(Collision collision)
     {

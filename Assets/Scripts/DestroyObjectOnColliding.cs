@@ -42,7 +42,9 @@ public class DestroyObjectOnColliding : MonoBehaviour
             );
             Debug.Log("analyticsResults Death_By_Fall -> " + analyticsResult);
             Debug.Log("analyticsResults Death_By_Fall -> " + activeSceneName);*/
-            
+
+            //FindObjectOfType<AudioManager>().Play("Player Death");
+            //Destroy(collision.collider);
             SceneManager.LoadScene(SceneManager.GetActiveScene().name);
         }
         

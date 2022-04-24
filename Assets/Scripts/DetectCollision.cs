@@ -38,6 +38,7 @@ public class DetectCollision : MonoBehaviour
                     { "Level", activeSceneName}
                 }
             );
+            FindObjectOfType<AudioManager>().Play("Player Death");
             Debug.Log("analyticsResults Death_By_Health -> " + analyticsResult);
             Debug.Log("analyticsResults Death_By_Health -> " + activeSceneName);
             restartLevel();

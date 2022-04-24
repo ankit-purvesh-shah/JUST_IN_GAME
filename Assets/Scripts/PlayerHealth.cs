@@ -135,6 +135,7 @@ public class PlayerHealth : MonoBehaviour
     {
         if (collision.gameObject.CompareTag("Reward"))
         {
+            FindObjectOfType<AudioManager>().Play("Health Collected");
             string activeSceneName = SceneManager.GetActiveScene().name;
             AnalyticsResult analyticsResult = Analytics.CustomEvent(
                 "Reward_collection",

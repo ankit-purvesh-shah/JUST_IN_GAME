@@ -71,6 +71,7 @@ public class AddPlayerControlledVelocity : MonoBehaviour
         // Also here we check if the Player is on Ground or not
         if (Input.GetButtonDown("Jump") && onPlatform)
         {
+            FindObjectOfType<AudioManager>().Play("Player Jump");
             Vector3 velocity = myBody.velocity;
             velocity.y = jumpForce;
             myBody.velocity = velocity * 0.3f;

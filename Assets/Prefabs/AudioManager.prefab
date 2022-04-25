@@ -52,7 +52,7 @@ MonoBehaviour:
     source: {fileID: 0}
   - name: Theme
     clip: {fileID: 8300000, guid: 6ca87bf4454b849c081dd2c0ed16d85d, type: 3}
-    volume: 0.164
+    volume: 0.362
     pitch: 1
     loop: 1
     source: {fileID: 0}
@@ -82,7 +82,25 @@ MonoBehaviour:
     source: {fileID: 0}
   - name: Player Shooting
     clip: {fileID: 8300000, guid: 944f550ae374e4109a614c2cf90c98a1, type: 3}
-    volume: 1
+    volume: 0.6
+    pitch: 1
+    loop: 0
+    source: {fileID: 0}
+  - name: Level Completion
+    clip: {fileID: 8300000, guid: 33a772b1a5e9d421da7704efb743dc09, type: 3}
+    volume: 0.6
+    pitch: 1
+    loop: 0
+    source: {fileID: 0}
+  - name: Title Breaking
+    clip: {fileID: 8300000, guid: 6f02305575b3c47ed87b4e14f6639982, type: 3}
+    volume: 0.6
+    pitch: 1
+    loop: 0
+    source: {fileID: 0}
+  - name: Enemy Touch
+    clip: {fileID: 8300000, guid: 936c8b4779b774a95bf10bbbe67254b7, type: 3}
+    volume: 0.4
     pitch: 1
     loop: 0
     source: {fileID: 0}

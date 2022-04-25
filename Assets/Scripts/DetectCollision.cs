@@ -12,7 +12,8 @@ public class DetectCollision : MonoBehaviour
     
     [SerializeField]
     float multiplicationFactor =2;
-    public Material nmaterial;
+
+
     PlayerHealth playerHealth;
     GameObject playerObject;
 
@@ -67,6 +68,10 @@ public class DetectCollision : MonoBehaviour
             Debug.Log("analyticsResults Level_Completion_Time -> " + analyticsResult);
             Debug.Log("analyticsResults Level_Completion_Time -> " + activeSceneName);
             Debug.Log("analyticsResults Level_Completion_Time -> " + Time.timeSinceLevelLoad);
+
+            FindObjectOfType<AudioManager>().Play("Level Completion");
+
+            StartCoroutine(addDelayAndPlaySound());
             nextLevel();
         }
 
@@ -83,6 +88,8 @@ public class DetectCollision : MonoBehaviour
                 );
             Debug.Log("analyticsResults Disappearing_tile_touched -> " + analyticsResult);
             Debug.Log("analyticsResults Disappearing_tile_touched -> " + activeSceneName);
+
+            //col.gameObject.GetComponent<Renderer>().material = breakMaterial;
             col.gameObject.GetComponent<Renderer>().material.color = Color.red;
             Debug.Log(col.gameObject);
 
@@ -102,6 +109,7 @@ public class DetectCollision : MonoBehaviour
             // col.gameObject.GetComponent<Renderer>().material.color = Color.red;
 
             Destroy(col.gameObject, 3);
+            FindObjectOfType<AudioManager>().Play("Title Breaking");
 
         }
 
@@ -154,8 +162,12 @@ public class DetectCollision : MonoBehaviour
 
         }
     }
+    public IEnumerator addDelayAndPlaySound()
+    {
+        yield return new WaitForSeconds(1f);
 
-    
+    }
+
     // public IEnumerator changeColorRed(Collision col){
     //     Debug.Log(col.gameObject.name);
     //     if (col.gameObject.name == "Disapperaring Cube")
@@ -165,7 +177,7 @@ public class DetectCollision : MonoBehaviour
     //     col.gameObject.GetComponent<Renderer>().material.color = Color.red;
     //     }
 
-       
+
     // }
 
 

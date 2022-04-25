@@ -96,6 +96,7 @@ public class PlayerHealth : MonoBehaviour
         if (collision.gameObject.tag == "Enemy")
         {
             collided = true;
+            FindObjectOfType<AudioManager>().Play("Enemy Touch");
             enemyMass = collision.rigidbody.mass;
             
             string activeSceneName = SceneManager.GetActiveScene().name;

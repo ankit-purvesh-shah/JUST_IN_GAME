@@ -35,7 +35,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8268555052368567606}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.129, y: 0.074, z: -0.29}
+  m_LocalPosition: {x: -0.3061, y: 0.074, z: -0.29}
   m_LocalScale: {x: 0.1152265, y: 0.1152265, z: 0.1152265}
   m_Children: []
   m_Father: {fileID: 0}
@@ -135,6 +135,7 @@ MonoBehaviour:
   keyNegative: 97
   v3Force: {x: 0, y: -0.001, z: 0.1}
   jumpForce: 9.5
+  onPlatform: 0
 --- !u!114 &8268555052368567612
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -151,6 +152,7 @@ MonoBehaviour:
   keyNegative: 119
   v3Force: {x: 0.1, y: -0.001, z: 0}
   jumpForce: 9.5
+  onPlatform: 0
 --- !u!114 &604652730
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -204,7 +206,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   d3: {fileID: 0}
   multiplicationFactor: 5
-  nmaterial: {fileID: 0}
 --- !u!114 &4306934304057664367
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -219,7 +220,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   currenthealth: 1000
   healthBar: {fileID: 0}
-  countText: {fileID: 0}
 --- !u!114 &1175448988
 MonoBehaviour:
   m_ObjectHideFlags: 0

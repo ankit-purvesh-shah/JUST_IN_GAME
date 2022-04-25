@@ -90,7 +90,7 @@ public class DetectCollision : MonoBehaviour
             Debug.Log("analyticsResults Disappearing_tile_touched -> " + activeSceneName);
 
             //col.gameObject.GetComponent<Renderer>().material = breakMaterial;
-            col.gameObject.GetComponent<Renderer>().material.color = Color.red;
+            col.gameObject.GetComponent<Renderer>().material.color = Color.gray;
             Debug.Log(col.gameObject);
 
             // col.gameObject.GetComponent<Animator>().SetBool("isCollided",true); 

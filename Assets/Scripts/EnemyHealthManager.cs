@@ -27,7 +27,7 @@ public class EnemyHealthManager : MonoBehaviour
     public void HurtEnemy(int damage)
     {
         currentHealth -= damage;
-
+        FindObjectOfType<AudioManager>().Play("Enemy Hit");
         GameObject enemyBlood = Instantiate(EnemyDeathEffect, transform.position, Quaternion.identity);
         StartCoroutine(AddDelay(0.6f));
     }

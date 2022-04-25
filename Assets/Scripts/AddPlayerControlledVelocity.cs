@@ -2,7 +2,6 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-
 public class AddPlayerControlledVelocity : MonoBehaviour
 {
     [SerializeField]
@@ -17,7 +16,7 @@ public class AddPlayerControlledVelocity : MonoBehaviour
     [SerializeField]
     private float jumpForce = 10;
 
-    private bool onPlatform;
+    public bool onPlatform;
     private string PLATFORM_TAG = "Platform";
 
     private Rigidbody myBody;
@@ -71,6 +70,7 @@ public class AddPlayerControlledVelocity : MonoBehaviour
         // Also here we check if the Player is on Ground or not
         if (Input.GetButtonDown("Jump") && onPlatform)
         {
+            FindObjectOfType<AudioManager>().Play("Player Jump");
             Vector3 velocity = myBody.velocity;
             velocity.y = jumpForce;
             myBody.velocity = velocity * 0.3f;

@@ -82,7 +82,7 @@ public class Spawn : MonoBehaviour
                     res = UnityEngine.Random.Range(minValue, maxValue);
                     newEnemy2.z = res;
                 }
-                
+                FindObjectOfType<AudioManager>().Play("Enemy Spawn");
                 GameObject portal1 =  Instantiate(portalGameObject, v3SpawnPos + newEnemy1, Quaternion.identity);
                 portal1.transform.rotation = Quaternion.Euler(90, 0, 0);
                 //portalGameObject.Transform.Rotation();
